@@ -1,30 +1,32 @@
-# Visual Style
+# Style visuel
 
-Status: provisional · Sources: [import] §1, [image] all four sheets
+Statut : provisoire (style décidé le 2026-10-04) · Sources : [import] §1, [image] les quatre planches
 
-## Look
-- Storybook fantasy + 1830s European royal aesthetics.
-- Rendering — **decided (2026-10-04, author): Pixar-like stylized 3D
-  animation**, as on the character sheets. The import's "painterly, realistic
-  character animation" is dropped.
-- Prompt wording: use *"stylized 3D animated feature-film look, soft
-  subsurface skin, expressive large eyes, rounded appealing shapes"*. Avoid
-  "realism / realistic / photoreal" and avoid naming the studio (some
-  generators refuse or drift on brand names).
-- Warm golden morning light, soft clouds, rich garden colours.
-- Cinematic depth of field, subtle magical particles.
-- Slightly surreal miniature scale that still feels believable.
+## Rendu
+- Fantastique de livre d'images + esthétique royale européenne des années 1830.
+- Rendu — **décidé (2026-10-04, auteur) : animation 3D stylisée façon Pixar**,
+  comme sur les planches de personnage. Le « pictural, animation réaliste » de
+  l'import est abandonné.
+- Formulation dans les prompts EN : *"stylized 3D animated feature-film look,
+  soft subsurface skin, expressive large eyes, rounded appealing shapes"*
+  (FR : rendu de long métrage d'animation 3D stylisé, peau douce et
+  translucide, grands yeux expressifs, formes arrondies et attachantes).
+  Éviter « realism / realistic / photoreal » et ne pas nommer le studio
+  (certains générateurs refusent les noms de marque ou dérivent).
+- Lumière dorée et chaude du matin, nuages doux, couleurs riches du jardin.
+- Profondeur de champ cinématographique, particules magiques discrètes.
+- Échelle miniature un peu surréaliste, mais qui reste crédible.
 
-## Tone
-Magical, intimate, cinematic, gently mysterious. Family audience with visual
-richness for adults. Suspense without horror.
+## Ton
+Magique, intime, cinématographique, doucement mystérieux. Public familial,
+avec une richesse visuelle pour les adultes. Du suspense sans horreur.
 
-## Continuity rules (CapCut / Seedance)
-1. Elias and the Rose must look identical in every shot — always paste the
-   **visual lock** paragraph from their character page into the prompt.
-2. Elias always reads as ~10 years old.
-3. Attach the matching concept image as reference whenever the tool allows.
-4. Aspect ratio: 16:9 (as on the sheets) — to confirm.
+## Règles de continuité (CapCut / Seedance)
+1. Elias et la Rose doivent être identiques d'un plan à l'autre — toujours
+   coller dans le prompt le **verrou visuel EN** de leur page personnage.
+2. Elias doit toujours paraître environ 10 ans.
+3. Joindre l'image de concept correspondante comme référence dès que l'outil le permet.
+4. Format d'image : 16:9 (comme sur les planches) — à confirmer.
 
-## Related
+## Liens
 [../characters/elias.md](../characters/elias.md) · [../characters/rose.md](../characters/rose.md) · [royal-garden.md](royal-garden.md)

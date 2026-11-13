@@ -1,10 +1,11 @@
-# 0002 — ChatGPT material is a starting point, not canon
+# 0002 — Le matériau ChatGPT est un point de départ, pas du canon
 
-Status: decided · Date: 2026-10-01
+Statut : décidé · Date : 2026-10-01
 
-All content from `Import/ChatGPT- Little Prince.md` is imported with status
-`provisional` and tag `[import]`. The author's brief asks to "improve and
-enrich" it and to diverge from the novella. Where the concept images
-contradict the text, the image is used for visual locks (the images are the
-author's later, deliberate output) and the conflict is logged in
-`issues/import-text-vs-images.md` for the author to confirm.
+Tout le contenu de `Import/ChatGPT- Little Prince.md` est importé avec le statut
+`provisoire` et l'origine `[import]`. La demande de l'auteur est de
+l'« améliorer et l'enrichir » et de s'éloigner de l'œuvre originale. Quand les
+images de concept contredisent le texte, l'image sert de référence pour les
+verrous visuels (les images sont une production ultérieure et délibérée de
+l'auteur) et le conflit est consigné dans `issues/import-text-vs-images.md`
+pour validation par l'auteur.

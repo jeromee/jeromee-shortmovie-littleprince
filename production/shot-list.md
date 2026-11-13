@@ -1,12 +1,15 @@
-# Shot List
+# Liste des plans
 
-Status: provisional (imported) · Total: 52 s / target ~300 s
+Statut : **en attente** (2026-11-01) — l'histoire est réécrite d'abord (kb/decisions/0005). Total : 52 s / objectif ≥ 300 s
 
-| # | ID | Title | Dur | Characters | Camera | Refs | Status |
+> Le plan 1 a été généré dans CapCut par l'auteur à titre d'essai et très bien
+> reçu : candidat naturel pour l'image d'ouverture de la nouvelle version.
+
+| # | ID | Titre | Durée | Personnages | Caméra | Réf. | Statut |
 |---|---|---|---:|---|---|---|---|
-| 1 | [SC01-SH01](shots/SC01-SH01.md) | The tiny kingdom in the sky | 10 s | Elias | Extreme wide aerial → push → descend | Garden | provisional |
-| 2 | [SC01-SH02](shots/SC01-SH02.md) | The forgotten corner | 8 s | Elias | Medium tracking → close 3/4 | Elias, Garden | provisional · CapCut v3 |
-| 3 | [SC01-SH03](shots/SC01-SH03.md) | The Rose | 10 s | Elias, Rose | Macro → rack focus → slow push-in | Elias, Rose | provisional |
-| 4 | [SC01-SH04](shots/SC01-SH04.md) | The Rose speaks | 12 s | Elias, Rose | CU / ECU alternation → two-shot | Elias, Rose | provisional |
-| 5 | [SC01-SH05](shots/SC01-SH05.md) | The warning | 12 s | Elias, Rose | Close two-shot → long pull-back → fade | Elias, Rose, Garden | provisional |
-|  |  | Title card | — | — | — | — | provisional |
+| 1 | [SC01-SH01](shots/SC01-SH01.md) | Le petit royaume dans le ciel | 10 s | Elias | Plan d'ensemble aérien très large → avancée → descente | Jardin | provisoire · généré (essai) |
+| 2 | [SC01-SH02](shots/SC01-SH02.md) | Le coin oublié | 8 s | Elias | Plan moyen en travelling → gros plan de trois-quarts | Elias, Jardin | provisoire · blocs CapCut v3 |
+| 3 | [SC01-SH03](shots/SC01-SH03.md) | La Rose | 10 s | Elias, la Rose | Macro → bascule de point → lente avancée | Elias, Rose | provisoire |
+| 4 | [SC01-SH04](shots/SC01-SH04.md) | La Rose parle | 12 s | Elias, la Rose | Alternance GP / TGP → plan à deux | Elias, Rose | provisoire |
+| 5 | [SC01-SH05](shots/SC01-SH05.md) | L'avertissement | 12 s | Elias, la Rose | Plan à deux serré → long recul → fondu | Elias, Rose, Jardin | provisoire |
+|  |  | Carton titre | — | — | — | — | provisoire |

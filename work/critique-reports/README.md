@@ -1,3 +1,3 @@
-# Critique reports
+# Rapports de critique
 
-Critic / editor / sw diagnostic outputs. Name: `YYYY-MM-DD-<draft>-<focus>.md`.
+Retours de critic / editor / diagnostics sw. Nom : `AAAA-MM-JJ-<brouillon>-<angle>.md`.

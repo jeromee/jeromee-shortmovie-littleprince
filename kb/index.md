@@ -1,17 +1,26 @@
-# KB Index
+# Index de la KB
 
-| Page | Status | Summary |
+| Page | Statut | Résumé |
 |---|---|---|
-| [vocab.md](vocab.md) | provisional | Canonical names and terms |
-| [characters/elias.md](characters/elias.md) | provisional (look decided) | Prince Elias, 10, protagonist |
-| [characters/rose.md](characters/rose.md) | provisional (colour decided) | The speaking rose — yellow |
-| [characters/queen-elara.md](characters/queen-elara.md) | provisional (look decided) | Elias's mother |
-| [world/aurelia.md](world/aurelia.md) | provisional | The tiny planet, year 1830, world rules |
-| [world/royal-garden.md](world/royal-garden.md) | provisional | Main location and the forgotten flower bed |
-| [world/visual-style.md](world/visual-style.md) | provisional (style decided) | Look, tone, Pixar-like 3D, continuity rules |
-| [styles/dialogue-voice.md](styles/dialogue-voice.md) | provisional | How each character speaks |
-| [decisions/0001-dual-plugin-structure.md](decisions/0001-dual-plugin-structure.md) | decided | Why the folder is organized this way |
-| [decisions/0002-chatgpt-import-provisional.md](decisions/0002-chatgpt-import-provisional.md) | decided | Imported material is a starting point, not canon |
-| [issues/import-text-vs-images.md](issues/import-text-vs-images.md) | open | Conflicts between ChatGPT text and concept images |
-| [issues/open-story-questions.md](issues/open-story-questions.md) | open | Story questions the import leaves unanswered |
-| [canon/](canon/) | — | Empty until scenes are locked |
+| [vocab.md](vocab.md) | provisoire | Noms et termes canoniques |
+| [characters/elias.md](characters/elias.md) | décidé | Le prince Elias, 10 ans, protagoniste — « je me débrouille seul » |
+| [characters/rose.md](characters/rose.md) | décidé (visage ouvert) | La Rose, gardienne d'Aurelia ; seuls les enfants l'entendent |
+| [characters/queen-elara.md](characters/queen-elara.md) | décidé | La reine Elara, mère et opposante ; l'entendait enfant |
+| [characters/chamberlain.md](characters/chamberlain.md) | décidé | Le Chambellan, courtisan âgé, regard des adultes |
+| [characters/extras.md](characters/extras.md) | décidé | Figurants : conseillers, valets, jardiniers, la cour |
+| [world/palace-sets.md](world/palace-sets.md) | décidé | Terrasse, cabinet de la Reine, chambre d'Elias, façade, tour de l'horloge |
+| [world/props-and-effects.md](world/props-and-effects.md) | décidé | Clochette, pendentif-clé, pétale, pluie d'étoiles, dôme, neige d'or, éclat d'or, serre |
+| [world/site-plan.md](world/site-plan.md) | décidé | Plan de masse : échelle, orientation, palais en U, jardin, serre, lumière |
+| [world/aurelia.md](world/aurelia.md) | provisoire | La minuscule planète, l'année 1830, les règles du monde |
+| [world/star-shower.md](world/star-shower.md) | décidé | La pluie d'étoiles, la protection de la Rose, la tour, la dernière fois |
+| [world/royal-garden.md](world/royal-garden.md) | décidé | Décor principal et le grand massif où vit la Rose |
+| [world/visual-style.md](world/visual-style.md) | provisoire (style décidé) | Rendu, ton, 3D façon Pixar, règles de continuité |
+| [styles/dialogue-voice.md](styles/dialogue-voice.md) | provisoire | La façon de parler de chaque personnage |
+| [decisions/0001-dual-plugin-structure.md](decisions/0001-dual-plugin-structure.md) | décidé | Pourquoi le dossier est organisé ainsi |
+| [decisions/0002-chatgpt-import-provisional.md](decisions/0002-chatgpt-import-provisional.md) | décidé | Le matériau importé est un point de départ, pas du canon |
+| [decisions/0003-project-language-french.md](decisions/0003-project-language-french.md) | décidé | Le projet est en français ; blocs CapCut FR + EN |
+| [decisions/0004-production-goals-and-tools.md](decisions/0004-production-goals-and-tools.md) | décidé | Objectifs, niveau d'exigence, apprentissage, chaîne d'outils |
+| [decisions/0005-text-first-strategy.md](decisions/0005-text-first-strategy.md) | décidé | Tous les textes avant tout visuel ; ordre des étapes |
+| [issues/import-text-vs-images.md](issues/import-text-vs-images.md) | ouvert | Conflits entre le texte ChatGPT et les images de concept |
+| [issues/open-story-questions.md](issues/open-story-questions.md) | ouvert | Questions d'histoire laissées sans réponse par l'import |
+| [canon/](canon/) | — | Vide tant qu'aucune scène n'est verrouillée |

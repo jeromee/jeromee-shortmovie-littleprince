@@ -1,3 +1,3 @@
 # Brainstorm
 
-Option lists and explorations (creative-writing `brainstormer`, sw stage-1 ideas). Name files by topic, e.g. `rose-identity-options.md`.
+Listes d'options et explorations (`brainstormer` de creative-writing, idées de l'étape 1 de sw). Nommer les fichiers par sujet, p. ex. `rose-identity-options.md`.

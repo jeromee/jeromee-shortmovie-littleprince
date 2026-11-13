@@ -1,3 +1,3 @@
 # Canon
 
-Empty until a scene is locked. One file per scene (`SC01.md`) listing the hard facts it establishes.
+Vide tant qu'aucune scène n'est verrouillée. Un fichier par scène (`SC01.md`) listant les faits établis par cette scène.

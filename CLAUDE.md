@@ -1,98 +1,140 @@
-# The Prince and the Rose — Project Guide
+# Le Prince et la Rose — Guide du projet
 
-> Read this first. It is the shared contract for **both** writing plugins
-> (`screenwriting` sw-* skills and `creative-writing-skills`) and for any
-> agent working in this folder.
+> À lire en premier. C'est le contrat commun aux **deux** plugins d'écriture
+> (`screenwriting`, skills sw-*, et `creative-writing-skills`) et à tout agent
+> qui travaille dans ce dossier.
 
-## Project overview
+## Présentation du projet
 
-A ~5-minute AI-generated animated short film, produced in **CapCut Video Studio
-(Director Mode)** with **Seedance** for video shots. Still images may come from
-GPT image, Google Nano Banana or Seedream. Claude maintains every textual
-storytelling artifact, from logline down to per-shot prompts, which the author
-then imports into CapCut.
+Un court métrage d'animation de style Pixar, de **5 minutes ou plus**, réalisé
+en grande partie avec l'IA générative. Public : cercle privé, sans prétention
+de diffusion. Objectifs, exigences et outils détaillés dans
+[kb/decisions/0004-production-goals-and-tools.md](kb/decisions/0004-production-goals-and-tools.md)
+(source : `Import/Little Prince - clarification 01.md`).
 
-Starting point: only three elements borrowed from Saint-Exupéry's *The Little
-Prince* — **a little prince**, **a very small planet**, **a speaking rose**.
-Everything else is free to diverge from the novella, and should.
+**Niveau d'exigence.**
+- **Image : non négociable.** Le film DOIT être visuellement très joli et
+  solide sur le plan cinématographique (cadrage, éclairage, montage…).
+- **Histoire et scénario : au moins « passable ».** On accepte des faiblesses
+  d'originalité, de rythme ou de gestion de la tension. Ne pas sur-investir
+  l'écriture au détriment de l'avancement.
 
-## Language
+**Chaîne d'outils.**
+| Outil | Rôle |
+|---|---|
+| Claude Desktop (ce projet) | Tous les textes : logline, synopsis, bible des personnages, bible du monde, scénario (writer's draft) formaté avec dialogues, scénario de tournage (shooting script), descriptions de plans à copier-coller dans CapCut |
+| Freepik / Magnific | Toutes les images : concepts, fiches de personnages, first frame / last frame — modèles Nano Banana, GPT-Image, Seedream… |
+| CapCut Video Studio (Director Mode) | Dialogue avec l'agent « CapCut AI », import des assets, génération vidéo de chaque plan (**Seedance 2.5**), voix des dialogues et bruitages intégrés |
+| CapCut « classique » | Musique libre de droits (bibliothèque CapCut) et montage final |
 
-- Working language, docs and screenplay: **English**.
-- The sw-* skills are written in Chinese: output stays in English; anchor terms
-  to their English originals (logline, beat, act out…) per `sw-workflow/terms.md`.
-- CapCut prompts: English.
+**Histoire.** À construire librement à partir d'éléments du *Petit Prince* de
+Saint-Exupéry, **empruntés et assumés** : aujourd'hui un petit prince, une
+petite planète, une rose qui parle ; d'autres éléments de l'œuvre restent
+disponibles (voir [work/brainstorm/borrowable-elements.md](work/brainstorm/borrowable-elements.md)).
 
-## How the two plugins share this folder
+## Langue
 
-| Need | Owner | Where it lives |
+- Langue de travail, des documents et du scénario : **français**. L'auteur
+  s'exprime en français ; tout fichier édité ou généré est en français.
+- Les skills sw-* sont rédigés en chinois : la production reste en français ;
+  les termes techniques gardent leur original anglais entre parenthèses quand
+  c'est utile (logline, beat, midpoint…), selon `sw-workflow/terms.md`.
+- **Blocs à coller dans CapCut ou dans un modèle d'image** : chaque bloc existe
+  en deux versions — **FR (référence)**, qui fait foi, et **EN (à coller)**,
+  traduction fidèle tenue synchronisée. Toute modification se fait d'abord en
+  FR, puis est reportée en EN.
+- **Voix du film (dialogues parlés générés par CapCut) : français** (décidé le 2026-11-02).
+  Dans les prompts EN, les répliques sont citées **en français**, entre guillemets.
+- Les prompts importés de ChatGPT (v0) restent en anglais, mot pour mot.
+- Les noms de fichiers et de dossiers restent en anglais (liens stables).
+- L'auteur utilise volontiers des mots anglais pour le jargon technique
+  (first frame, shooting script, writer's draft…) : les garder tels quels.
+
+## Comment les deux plugins se partagent le dossier
+
+| Besoin | Propriétaire | Emplacement |
 |---|---|---|
-| Session state, stage, decided items, decision log | screenwriting (`sw-workflow`) | `story-bible.md` |
-| Per-concept reference wiki (characters, places, rules) | creative-writing (`kb-management`) | `kb/` |
-| Settled hard facts (once a scene is locked) | creative-writing (`story-memory`) | `kb/canon/` |
-| Canonical names & terms | creative-writing (`shared-dao`) | `kb/vocab.md` |
-| Decision rationale (long form) | creative-writing | `kb/decisions/` |
-| Cross-cutting problems / continuity issues | creative-writing | `kb/issues/` |
-| Outline / step outline / beat board | both (`sw-story-structure`, `sw-scene-craft`, `story-planning`) | `work/outline/` |
-| Screenplay drafts (Fountain) | screenwriting (`sw-format-adaptation`) | `work/drafts/` |
+| État de session, étape, éléments décidés, journal des décisions | screenwriting (`sw-workflow`) | `story-bible.md` |
+| Wiki de référence par concept (personnages, lieux, règles) | creative-writing (`kb-management`) | `kb/` |
+| Faits établis (une fois une scène verrouillée) | creative-writing (`story-memory`) | `kb/canon/` |
+| Noms et termes canoniques | creative-writing (`shared-dao`) | `kb/vocab.md` |
+| Justification détaillée des décisions | creative-writing | `kb/decisions/` |
+| Problèmes transversaux / continuité | creative-writing | `kb/issues/` |
+| Plan, séquencier, tableau des beats | les deux (`sw-story-structure`, `sw-scene-craft`, `story-planning`) | `work/outline/` |
+| Brouillons du scénario (Fountain) | screenwriting (`sw-format-adaptation`) | `work/drafts/` |
 | Brainstorms, options | creative-writing (`brainstormer`) | `work/brainstorm/` |
-| Critique & diagnostic reports | both (`critic`, `editor`, sw diagnostics) | `work/critique-reports/` |
-| CapCut handoff: shot list + per-shot prompts | this project | `production/` |
-| Raw inputs (immutable) | — | `Import/` |
+| Critiques et rapports de diagnostic | les deux (`critic`, `editor`, diagnostics sw) | `work/critique-reports/` |
+| Livraison CapCut : liste des plans + prompts par plan | ce projet | `production/` |
+| Matériaux bruts (intouchables) | — | `Import/` |
 
-**Single source of truth rule.** `story-bible.md` holds *conclusions and state*
-only (≤ ~15k words); it links to `kb/` pages instead of repeating them.
-Character looks, voice and visual locks live **only** in `kb/characters/*`;
-shot files reference them, never redefine them.
+**Règle de source unique.** `story-bible.md` ne contient que des *conclusions
+et l'état d'avancement* (≤ ~15 000 mots) ; il renvoie vers les pages `kb/` au
+lieu de les répéter. L'apparence, la voix et les verrous visuels des
+personnages vivent **uniquement** dans `kb/characters/*` ; les fiches de plan
+y renvoient, sans jamais les redéfinir.
 
-## Folder layout
+## Arborescence
 
 ```text
-CLAUDE.md                 this guide
-story-bible.md            sw-workflow hub: stage, decisions, decision log, "Next step"
-Import/                   raw source material — never edit
+CLAUDE.md                 ce guide
+story-bible.md            centre sw-workflow : étape, décisions, journal, « Prochaine étape »
+Import/                   matériaux bruts — ne jamais modifier
 kb/
-  AGENTS.md               KB intent and rules
-  index.md                catalog of KB pages
-  vocab.md                canonical terms
-  characters/             one file per character (incl. visual lock for prompts)
-  world/                  planet, locations, visual style, world rules
-  canon/                  locked facts per scene (empty until scenes lock)
-  styles/                 voice/style references (dialogue voice, tone)
-  decisions/              decision records (NNNN-slug.md)
-  issues/                 tracked problems (continuity, open conflicts)
+  AGENTS.md               intention et règles de la KB
+  index.md                catalogue des pages
+  vocab.md                termes canoniques
+  characters/             une fiche par personnage (avec verrou visuel pour les prompts)
+  world/                  planète, lieux, style visuel, règles du monde
+  canon/                  faits verrouillés par scène (vide tant qu'aucune scène n'est verrouillée)
+  styles/                 références de voix et de ton (dialogues)
+  decisions/              fiches de décision (NNNN-slug.md)
+  issues/                 problèmes suivis (continuité, conflits ouverts)
 work/
-  outline/                step outline, beat board
-  drafts/                 screenplay drafts: screenplay-vN.fountain
-  brainstorm/             option lists, explorations
-  critique-reports/       critic / diagnostic output
+  outline/                séquencier, tableau des beats
+  drafts/                 brouillons du scénario : screenplay-vN.fountain
+  brainstorm/             listes d'options, explorations
+  critique-reports/       retours de critique / diagnostic
 production/
-  README.md               CapCut workflow conventions
-  shot-list.md            master shot table (timing, IDs, status)
-  shots/                  one file per shot: SCxx-SHyy.md
+  README.md               conventions de travail CapCut
+  shot-list.md            tableau maître des plans (durées, identifiants, statut)
+  shots/                  une fiche par plan : SCxx-SHyy.md
 ```
 
 ## Conventions
 
-- **Status tag** at the top of every kb/work/production page:
-  `provisional` (imported or proposed, not approved) → `decided` (author
-  approved) → `canon` (locked into a finished scene/shot).
-  All material imported from ChatGPT starts as `provisional`.
-- **Source tag** on ideas: `[import]` ChatGPT file, `[author]`, `[claude]`,
-  `[image]` concept image.
-- **IDs**: scenes `SC01`, shots `SC01-SH01`. Shot files named by ID.
-  Durations in seconds; film clock as `m:ss`.
-- **Screenplay format**: Fountain (`.fountain`), US spec style; 1 page ≈ 1 min.
-- **Changes to a decided item** → add a line to the Decision log in
-  `story-bible.md` (date, what, why); long rationale → `kb/decisions/`.
-- Concept images are referenced by path from `Import/` (or a later
-  `production/refs/`), never copied into kb pages.
-- The author's direct edits are always authoritative; read current files
-  before editing.
+- **Statut** en tête de chaque page kb/work/production :
+  `provisoire` (importé ou proposé, non validé) → `décidé` (validé par
+  l'auteur) → `canon` (verrouillé dans une scène ou un plan terminé).
+  Tout le matériau importé de ChatGPT démarre en `provisoire`.
+- **Origine** des idées : `[import]` fichier ChatGPT, `[auteur]`, `[claude]`,
+  `[image]` image de concept.
+- **Identifiants** : scènes `SC01`, plans `SC01-SH01`. Fiches de plan nommées
+  par identifiant. Durées en secondes ; minutage du film en `m:ss`.
+- **Format du scénario** : Fountain (`.fountain`) ; 1 page ≈ 1 min.
+- **Modifier un élément décidé** → ajouter une ligne au journal des décisions
+  de `story-bible.md` (date, quoi, pourquoi) ; justification longue →
+  `kb/decisions/`.
+- Les images de concept sont référencées par leur chemin dans `Import/` (ou un
+  futur `production/refs/`), jamais copiées dans les pages kb.
+- Les modifications directes de l'auteur font toujours foi ; relire les
+  fichiers avant de les modifier.
 
-## Session protocol (both plugins)
+## Protocole de session (les deux plugins)
 
-1. Open `story-bible.md` → read *Current stage*, *Decided*, *Decision log*.
-2. Work the current stage (sw-workflow short-film path: 1 → 2 → 3 → 4 → 5).
-3. Write conclusions back to the bible; detailed knowledge to `kb/`.
-4. End by updating the bible's **Next step** line.
+1. Ouvrir `story-bible.md` → lire *Étape en cours*, *Décidé*, *Journal des décisions*.
+2. Travailler l'étape en cours, dans l'ordre : 0 Intention → 1 Logline → 2 Personnages
+   → 3 Monde (boucle 1–3) → 4 Synopsis → 5 Séquencier → 6 Writer's draft →
+   7 Shooting script → 8 Découpage technique. **Aucun travail visuel avant la fin
+   de l'étape 7** (kb/decisions/0005).
+3. Reporter les conclusions dans la bible ; le savoir détaillé dans `kb/`.
+4. Terminer en mettant à jour la ligne **Prochaine étape** de la bible.
+
+## Gestion de versions (Git)
+
+- Le dossier est un dépôt Git, versionné par l'auteur.
+- Claude ne fait jamais de commit, de push ni de réécriture d'historique sans
+  demande de l'auteur.
+- Les agents creative-writing (critic, editor, continuity-checker) peuvent lire
+  `git diff` / `git log` pour voir ce qui a changé depuis le dernier commit.
+- Rythme conseillé : un commit par étape validée (décision prise, plan prêt
+  pour CapCut, nouveau brouillon du scénario).

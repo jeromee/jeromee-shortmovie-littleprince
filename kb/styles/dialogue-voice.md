@@ -1,22 +1,28 @@
-# Dialogue Voice
+# Voix des dialogues
 
-Status: provisional · Source: [import]
+Statut : provisoire · Origine : [import] (répliques traduites en français le 2026-10-24)
 
-## The Rose
-- Gentle, ancient, warm; playful and slightly teasing; mysterious.
-- Short sentences. Addresses Elias as "little prince" until the warning, where
-  she uses his name for the first time — a deliberate shift. [claude note]
-- Imported lines: "Of course I am alive, little prince." / "I have been waiting
-  a very long time for you." / "You must listen carefully, Elias. Your little
-  world is not as safe as you believe."
+## La Rose
+- Douce, ancienne, chaleureuse ; joueuse et un brin taquine ; mystérieuse.
+- Phrases courtes. Elle appelle Elias « petit prince » jusqu'à l'avertissement,
+  où elle prononce son prénom pour la première fois — un basculement voulu.
+  [note claude]
+- Répliques (import, traduites) : « Bien sûr que je suis vivante, petit
+  prince. » / « Cela fait très longtemps que je t'attends. » / « Écoute-moi
+  bien, Elias. Ton petit monde n'est pas aussi sûr que tu le crois. »
+- Elle tutoie Elias.
 
 ## Elias
-- A child's directness; questions more than statements; whispers when awed.
-- Imported lines: "Are you... alive?" / "You... you can talk?"
+- Franchise d'enfant ; plus de questions que d'affirmations ; chuchote quand
+  il est émerveillé. Tutoie la Rose.
+- Répliques (import, traduites) : « Tu es… vivante ? » / « Tu… tu sais parler ? »
 
-## Queen Elara
-- No lines yet. Expected register: warm, formal, slightly hurried.
+## La reine Elara
+- Pas encore de répliques. Registre attendu : chaleureux, soutenu, un peu pressé.
 
-## Rules
-- Dialogue must be sayable within the shot duration (≈ 2.5 words/sec).
-- No exposition dumps; the Rose reveals by implication.
+## Règles
+- Une réplique doit tenir dans la durée du plan (≈ 2,5 mots/s ; le français
+  est souvent un peu plus long que l'anglais — vérifier au minutage).
+- Pas de tunnel d'exposition ; la Rose révèle par sous-entendus.
+- Voir la question ouverte sur la langue des dialogues parlés dans
+  [../issues/open-story-questions.md](../issues/open-story-questions.md).
