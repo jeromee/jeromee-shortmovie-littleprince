@@ -31,8 +31,9 @@ d'abord paraître. Elle « attend Elias depuis très longtemps ». [import]
 | Psychologique | Sage, mystérieuse, joueuse, un brin taquine. Douce et ancienne, jamais effrayante. |
 
 ## Voix
-Douce, chaude, presque chuchotée, avec une légère résonance magique ; « voix
-féminine ancienne ». Jamais caricaturale. Voir [../styles/dialogue-voice.md](../styles/dialogue-voice.md).
+Douce, chaude, presque chuchotée, avec une légère résonance magique ; « voix
+féminine ancienne ». Jamais caricaturale.
+**Réglage (2026-11-15, auteur, après l'essai Seedance E2)** : la voix obtenue est un peu grave, plus celle d'une dame que d'une jeune fille ; la viser **plus claire et plus jeune**, tout en gardant sa sagesse. Formulation EN pour les prompts : `a soft, clear, youthful female voice, light and warm, with a gentle wise tone`. Voir [../styles/dialogue-voice.md](../styles/dialogue-voice.md).
 
 ## Couleur — décidée (2026-10-04, auteur)
 La Rose est **jaune** (pétales jaune pâle veloutés, cœur doré), comme sur

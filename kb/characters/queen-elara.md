@@ -40,6 +40,11 @@ point Elias est seul, et ne l'écoute plus. Pas une méchante.
   l'arrière de la tête.
 - **Bijoux** : petit diadème doré serti de pierres corail ; pendants d'oreilles
   corail ; collier de perles roses avec un petit pendentif.
+- **Pendentif** (2026-11-15) : une rose d'or couronnée posée dans un calice, au
+  sommet d'un fin étui d'or fuselé terminé par une perle rose ; il cache la clé
+  de la tour. Voir [../world/props-and-effects.md](../world/props-and-effects.md)
+  et `production/refs/key-pendant-sheet.png`. La planche de personnage montre
+  l'ancien petit pendentif : c'est cette description qui fait foi.
 - **Robe** : robe de bal à jupe ample en dentelle et tulle **rose poudré** ;
   corsage ajusté à encolure carrée et panneaux de dentelle ; manches trois-quarts
   terminées par des volants superposés ; jupe à étages drapés parsemée de
@@ -56,7 +61,8 @@ point Elias est seul, et ne l'écoute plus. Pas une méchante.
 > La reine Elara, une femme élégante qui paraît une trentaine d'années, teint
 > de porcelaine, yeux bruns chaleureux, expression sereine et douce, cheveux
 > brun foncé à noirs en chignon volumineux, petit diadème doré serti de pierres
-> corail, pendants d'oreilles corail, collier de perles roses ; robe de bal à
+> corail, pendants d'oreilles corail, collier de perles roses portant un fin pendentif
+> d'or (une rose couronnée sur un étui fuselé) ; robe de bal à
 > jupe ample en dentelle et tulle rose poudré, encolure carrée, manches
 > trois-quarts à volants superposés, jupe à étages drapés parsemée de petites
 > rosettes de tissu ; elle tient un fin sceptre rose surmonté d'un ornement en
@@ -64,7 +70,7 @@ point Elias est seul, et ne l'écoute plus. Pas une méchante.
 
 **EN (à coller)**
 ```text
-Queen Elara, an elegant woman who looks in her early thirties, fair porcelain skin, warm brown eyes, serene gentle expression, dark brown-to-black hair in a voluminous chignon, small gold tiara with red-coral stones, coral drop earrings, pink bead necklace; full-skirted blush-pink lace and tulle ball gown with a square neckline, three-quarter sleeves with layered ruffles, draped skirt tiers dotted with small fabric rosettes; holding a slim pink sceptre topped with a heart-shaped ornament.
+Queen Elara, an elegant woman who looks in her early thirties, fair porcelain skin, warm brown eyes, serene gentle expression, dark brown-to-black hair in a voluminous chignon, small gold tiara with red-coral stones, coral drop earrings, pink pearl necklace with a slender gold pendant (a small crowned gold rose atop a tapered chased-gold sheath with a tiny pink pearl drop); full-skirted blush-pink lace and tulle ball gown with a square neckline, three-quarter sleeves with layered ruffles, draped skirt tiers dotted with small fabric rosettes; holding a slim pink sceptre topped with a heart-shaped ornament.
 ```
 
 ## Elara enfant (le portrait, scène 4) — provisoire, 2026-11-02

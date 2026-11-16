@@ -39,6 +39,7 @@ Les vignettes sont générées (Freepik / Magnific) puis montées en animatique
 dans Blender ; chaque plan en sort aussi en MP4, utilisé dans CapCut comme
 vidéo de référence pour le mouvement de caméra.
 
+- **Emplacement** : `production/storyboard/`. À côté de chaque vignette, le rendu de maquette qui sert de référence de cadrage : `SCxx-SHyy_A_graybox.png` (scène Blender du plan, image de départ ou d'arrivée). Images de référence tirées d'`Import/` : `production/refs/`. Les essais non retenus vont dans `production/storyboard/candidates/SCxx-SHyy/`, un sous-dossier par plan.
 - **Une vignette par composition qui compte**, pas forcément une par plan.
 - **Nommage** : `SCxx-SHyy_A.png`, `SCxx-SHyy_B.png`… La première vignette
   d'un plan est **toujours la frame de départ** (= first frame Seedance) ; la

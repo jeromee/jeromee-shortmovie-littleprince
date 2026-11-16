@@ -204,4 +204,54 @@ Grille de minutage visée pour 5:00 (BS2 mis à l'échelle, pour référence) :
 
 - 2026-11-14 Plan de masse v2 validé : palais en U au nord (terrasse surélevée, grand escalier), jardin ovale à murets courbes au sud, arche entre le château et le massif, grand massif dans une exèdre au bord sud à ≈ 130 m de la façade, serre à l'est ← choix de l'auteur, `kb/world/site-plan.md`.
 
-Prochaine étape : blockout du monde dans Blender d'après `kb/world/site-plan.md` (repères colorés, une collection par lieu) ; puis découpage plan par plan (scène 1 d'abord). Planche de design de la clé et de la serrure secrète avant le découpage de la scène 10.
+- 2026-11-14 Blockout du monde construit dans le Blender de l'auteur (`production/blender/world.blend`, script `build_world.py`) : planète de 4 km (proposition), plateau avec palais en U et jardin ovale, repères colorés, mannequins, six caméras de contrôle ← `kb/world/site-plan.md`.
+
+- 2026-11-14 Blockout validé : planète de 4 km de diamètre, hauteurs du palais et de la tour ; serre réduite à 16 × 10 m ← choix de l'auteur.
+
+- 2026-11-14 Scène 1 découpée en trois plans (option B, 13 s) : SC01-SH01 « La planète » 4 s, SC01-SH02 « La plongée » 5 s, SC01-SH03 « Le survol » 4 s. SH01 et SH02 forment une seule descente continue (coupe en plein mouvement ; la première image de SH02 sera la dernière de SH01 généré) ; SH03 part de 25 m et ralentit jusqu'à l'arrêt au pied du grand escalier ← choix de l'auteur. Caméras dans `world.blend` (`build_shots_sc01.py`), animatique `production/animatic/SC01_animatic.mp4`, fiches de plan `production/shots/SC01-SH01..03.md` ; anciennes fiches importées archivées dans `production/shots/_obsolete/`.
+
+- 2026-11-14 Sommet de la tour de l'horloge : **beffroi** (galerie à balustrade en encorbellement au-dessus du cadran, étage des cloches à arcades, flèche d'ardoise jusqu'à 68 m) pour qu'Elias puisse s'y tenir (scène 11) ← choix de l'auteur. Image de référence du palais à établir avant toute vignette où il apparaît (vue de trois-quarts sud-ouest en légère plongée, caméra `CAM_palais_ref`) ← demande de l'auteur, pour éviter les variations d'une vignette à l'autre.
+
+- 2026-11-14 Image de référence du palais : `production/refs/palace-ref.png` (candidate nb3) ← choix de l'auteur. Elle fait foi pour l'architecture (pas pour le jardin) et sera jointe à toute vignette où le palais apparaît ; verrou FR/EN dans `kb/world/palace-sets.md`. Maquette recalée dessus par ajustement de caméra (écart moyen ≈ 14 px sur 1000) : tour avancée sur la façade, plus large (14 m) et moins haute (galerie 40 m, flèche 62 m), cour et terrasse de 34 m, ailes prolongées jusqu'à 35 m de la façade, escalier de 14 m, toits à croupes ; vidéos de référence de la scène 1 refaites.
+
+- 2026-11-14 Vignettes de la scène 1 retenues : SC01-SH01_A = candidate nb3 (planète plus riche, cadrage repris par la caméra Blender, départ de la descente recalé) ; SC01-SH03_A et _B ← choix de l'auteur. Télescope de la terrasse : toujours pointé vers le ciel au-dessus du jardin, jamais vers le palais (vignette B corrigée) ← remarque de l'auteur. Fiches de personnage à établir pour le Chambellan et le valet de la Reine (scènes 4–5), qu'on verra de près ← demande de l'auteur ; nouvelle page `kb/characters/footman.md` (provisoire).
+
+- 2026-11-15 Fiches retenues : Chambellan nb1, valet de la Reine nb1 (le plus doux ; il a de l'affection pour Elias) ← choix de l'auteur. Scène 1 générée dans Magnific (Seedance 2.5, 720p, sans musique) : SH01 et SH03 v1 suivent bien la caméra, upscalés en 1080p (Magnific Precision) ; SH02 v1 rejeté (avec la référence du palais jointe, Seedance a quitté la trajectoire pour recopier le point de vue de l'image), SH02 v2 refait sans cette référence. Montage de contrôle : `production/generated/SC01/SC01_montage_v1.mp4`.
+
+- 2026-11-15 Ordre de production revu : toute la préparation (images de référence, découpage des scènes 2 à 13, caméras Blender, vignettes, animatique complète) avant toute génération Seedance de production ; trois essais Seedance d'abord (dialogue en plan à deux, éveil de la Rose, dôme d'or) ← choix de l'auteur, `kb/decisions/0006-preproduction-before-generation.md`. Le palais de SC01-SH01_A ne ressemble pas au palais vu de près : SH01 et SH02 seront refaits à partir d'une vue aérienne du palais ← remarque de l'auteur.
+
+- 2026-11-15 Essais Seedance validés (dialogue en plan à deux, éveil de la Rose, dôme d'or) : français et synchronisation des lèvres très bons, voix d'Elias très bien ; voix de la Rose à rendre plus claire et plus jeune ← avis de l'auteur, `production/tests/seedance-essais/README.md`. On passe à la préparation complète (décision 0006).
+
+- 2026-11-15 Vue aérienne de référence du palais : `production/refs/palace-aerial.png` (env2) ← choix de l'auteur, après corrections demandées (un seul muret, une seule fontaine, massif conforme à l'image de concept) et ajout des alentours (chemins vers le village et les forêts, petite rivière à deux ponts, verger, champs à haies). Maquette mise à jour (plateau en prairie, fontaine d'un seul tenant, collection `AUR_23_alentours`) ; `kb/world/site-plan.md` § Alentours. Vignettes refaites avec elle : SC01-SH01_A (v2) et nouvelle vignette de fin SC01-SH02_B.
+
+- 2026-11-15 Vignettes SC01-SH01_A v2 et SC01-SH02_B validées ← auteur. Proportions : sur les images, le palais paraît trop grand par rapport au jardin ; s'il faut corriger, l'auteur préfère **agrandir le jardin**, surtout en profondeur nord-sud, plutôt que réduire le palais (sur l'image de concept, vu du massif, le palais paraît bien plus lointain) ← avis de l'auteur.
+
+- 2026-11-15 Jardin allongé de 40 % du nord au sud (190 × 190 m ; massif à ≈ 210 m de la façade au lieu de 157) ; SC01-SH03 passe à 5 s ← choix de l'auteur. Maquette, alentours et caméras de la scène 1 mis à jour ; référence aérienne refaite avec ces proportions (palais ≈ un tiers de la largeur du jardin) ; vignettes SC01-SH02_B et SC01-SH03_A refaites ; `kb/world/site-plan.md`.
+
+- 2026-11-15 Choix validés : référence aérienne v4 nb3 ; SC01-SH02_B = v2 nb2 (nb1 rejetée : végétation trop pauvre hors de l'enceinte, mini-muret en trop) ; SC01-SH03_A = v3 nb3 (plus de recul sur l'arche) ← choix de l'auteur.
+
+- 2026-11-15 Images de référence du grand massif (jour, nuit, neige d'or, aube) avec le palais officiel au fond, composition de l'image de concept conservée (palais à gauche de l'arche : caméra décalée à l'ouest de l'axe, pour éviter l'enfilade) ← choix de l'auteur ; scène 12 : serre détruite, dôme invisible dans ce plan ← remarques de l'auteur ; `kb/world/royal-garden.md`. Taille du dôme : l'auteur le voit couvrir l'enceinte palais + jardin, ce qui contredit le shooting script (scène 11 : dôme sur forêts et villages, puis toute la planète vue de l'espace) → à trancher.
+
+- 2026-11-15 Bouclier de la Rose : **bulle complète** (boule à neige). Il naît en petit dôme autour d'Elias sur la galerie du beffroi, gonfle et se referme sur toute la planète ; vu du sol, presque invisible ← choix de l'auteur. Détail dans kb/world/props-and-effects.md ; scène 11 du shooting script ajustée.
+
+- 2026-11-15 Pluie d'étoiles directionnelle, **radiant au sud-est**, à environ 40° (la terrasse donne au sud ; la serre, à l'est, est touchée la première) ← choix de l'auteur. Détail dans kb/world/star-shower.md.
+
+- 2026-11-15 Images de référence des intérieurs : cabinet de la Reine = `queen-study.png` (nb1), intérieur de la tour = `tower-interior.png` (nb1) ← choix de l'auteur. Chambre d'Elias : style nb2 à retravailler (pas de balcon, fenêtre à allège, serrure et non cadenas, vue réelle vers l'ouest). Porte de la tour : design et scène 10 à repenser (la rose sculptée rend la solution trop évidente).
+
+- 2026-11-15 Porte de la tour revue : la rose sculptée unique rendait la solution trop évidente. Désormais des dizaines de petites roses couronnées sur le bois de la porte, la vraie serrure dans l'une d'elles ; Elias fait le lien avec l'anneau de la clé, la lumière du pétale révèle la bonne (« la rose parmi cent ») ← choix de l'auteur. Grande serrure à palâtre, pas un cadenas. Scène 10 du shooting script réécrite.
+
+- 2026-11-15 Géographie du palais revue ← choix de l'auteur : chambre d'Elias à l'est (façade extérieure de l'aile est ; vue sur le verger et le ciel du sud-est, aucun élément du palais) ; évasion par le lierre côté verger, invisible de la terrasse ; course le long du bord est du jardin, dans l'ombre, devant la serre (la cour, éblouie par ses lanternes, regarde le ciel) ; porte de la tour intérieure, au fond du grand vestibule. Shooting script scènes 5, 6, 7, 10 ; maquette (repères fenêtre et porte) ; site-plan et palace-sets mis à jour. Porte de la tour : v2 nb2 retenue.
+
+- 2026-11-15 Références retenues ← choix de l'auteur : chambre d'Elias = `elias-room.png` (v5 nb1, vue à l'est, nuit) ; porte de la tour = `tower-door.png` (version intérieure, v3 nb2) ; planche clé et serrure secrète = `key-lock-sheet.png` (nb2).
+
+- 2026-11-15 Pendentif-clé de la Reine : un étui « boîte à secret » ← choix de l'auteur (le panneton ne fait pas bijou ; le collier ne doit pas casser). La rose couronnée (anneau de la clé) est posée dans un calice dont deux sépales s'enfilent sur le collier ; la Reine tire la rose vers le haut, la clé sort, l'étui reste. Planche `key-pendant-sheet.png`. Scène 9 ajustée ; fiche de la Reine et props-and-effects mis à jour.
+
+- 2026-11-15 Pétale de lumière : planche `petal-sheet.png` (nb2) ← choix de l'auteur ; Elias le tient contre sa poitrine, mains croisées (et non sous sa veste) : scènes 9 et 10 ajustées. Bible visuelle des décors et accessoires terminée.
+
+- 2026-11-15 Scène 2 (terrasse) : découpage option B, 6 plans, 36 s ← choix de l'auteur (le gros plan SH04 présente Elias de près). Fauteuils en deux rangées tournées vers le jardin, avec une allée centrale. Mise en scène et caméras dans `build_shots_sc02.py`, animatique `SC02_animatic.mp4`.
+
+- 2026-11-15 Personnages ← choix de l'auteur : fiche des trois conseillers créée (`advisers.md`, planche v2 nb3, habits de cour et non redingotes 1880) ; Chambellan revu (nez court, visage rond et affable, planche v2 nb2) pour ne plus ressembler au premier conseiller. Palais généré en 3D avec Tripo H3.1 (Magnific) depuis `palace-ref` : essai concluant, à intégrer à la maquette pour fiabiliser les vignettes.
+
+- 2026-11-15 **Palais officiel en 3D** ← choix de l'auteur : le modèle Tripo qu'il a généré depuis `palace-ref-cleaned.png` (Import/palace-tripo-test/) devient la référence ; la maquette et la mise en scène s'alignent sur ses proportions (terrasse ≈ 37,6 × 20 m au niveau 3,6 m, ailes plus courtes, flèche à ≈ 51 m). Essais Tripo via Magnific (v1 vue unique, v2 quatre élévations) écartés : la v2 perdait la cour en U. Scène 2 recalée (`build_shots_sc02.py`, SH01 recadré), animatique et vignettes refaites.
+
+Prochaine étape : découpage des scènes 2 à 13 (fiches de plan), caméras Blender des plans en mouvement, vignettes A/B, animatique complète ; références du grand vestibule et de la façade est seulement si le découpage le demande.

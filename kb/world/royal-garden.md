@@ -24,6 +24,18 @@ l'horizon courbe de la planète · un ciel étoilé.
   d'Aurelia. C'est là qu'Elias doit porter le pétale de lumière
   (voir [star-shower.md](star-shower.md)). Fermée à clé.
 
+## Images de référence du grand massif — décidé (2026-11-15, auteur)
+Mêmes cadrage et composition que l'image de concept, avec le **palais officiel** au fond (`production/refs/palace-ref.png`) :
+
+| Moment | Scènes | Image | Particularités |
+|---|---|---|---|
+| Jour | 3 | `production/refs/garden-day.png` | image de concept mise à jour (l'original reste `Import/Garden with Rose 01.png`) |
+| Nuit | 7, 8 | `production/refs/garden-night.png` | étoiles filantes, la Rose brille comme une lanterne, serre intacte |
+| Nuit, après le dôme | 12 | `production/refs/garden-night-golden-snow.png` | neige d'or, Rose pâle aux pétales tombés, **serre détruite** (squelette fumant, braises) ; dôme invisible, confondu avec le ciel |
+| Aube | 13 | `production/refs/garden-dawn.png` | lumière rose et dorée, cratères fumants, squelette de la serre |
+
+**Composition** : le palais est en haut à gauche, pas dans l'axe derrière l'arche. C'est cohérent avec le plan si la caméra se tient à ≈ 7 m à l'ouest de l'axe, près du massif, et vise l'arche : le palais, à ≈ 210 m, apparaît alors à gauche de l'arche, et la serre à droite. Cela évite l'enfilade arche-palais, trop symétrique (remarque de l'auteur). Règle pour les plans tournés au massif : préférer ces axes décalés.
+
 ## Verrou visuel (pour les prompts — d'après l'image de concept)
 
 **FR (référence)**
