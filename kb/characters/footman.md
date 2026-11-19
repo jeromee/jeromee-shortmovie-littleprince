@@ -6,6 +6,7 @@ Statut : décidé (2026-11-15, auteur) · Origine : [claude], à la demande de
 Le valet attaché au service de la Reine. Il attend dans son cabinet, une lampe à la main (scène 4), puis raccompagne Elias dans sa chambre et ferme la porte à clé (scènes 4–5). Il obéit sans discuter, mais sans dureté : il a de l'affection pour le petit prince, même si c'est lui qui l'enferme dans sa chambre ; un regard désolé suffit à le montrer [auteur]. Pas de réplique.
 
 ## Apparence
+- **Taille** (2026-11-16, auteur) : 1,78 m. Voir [heights.md](heights.md).
 - Environ 45 ans, solide et un peu trapu, visage rond et bienveillant, rasé de près.
 - Ses propres cheveux, courts, châtain foncé grisonnant aux tempes (pas de perruque, contrairement au Chambellan).
 - Livrée du palais : habit crème à col, parements et revers bleu marine, boutons dorés, gilet bleu marine, culotte crème, bas blancs, souliers noirs à boucle, gants blancs.

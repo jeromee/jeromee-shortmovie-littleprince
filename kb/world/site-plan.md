@@ -14,7 +14,7 @@ par rapport aux autres, l'échelle et la lumière. Le blockout Blender
 - Vu en regardant le château depuis le jardin (comme sur l'image de concept) :
   **serre à droite**, fontaine murale à droite, banc et fontaine à vasques à
   gauche.
-- **L'arche est entre le château et le massif.**
+- **L'arche est entre le château et le massif.** (Toujours vrai en v3, mais sur l'allée sinueuse, au seuil de la clairière.)
 - **Le massif est à 100 m ou plus du château.**
 - **Murets en courbes**, comme dans la vidéo, et non rectilignes.
 - Palais en U conservé.
@@ -41,20 +41,42 @@ par rapport aux autres, l'échelle et la lumière. Le blockout Blender
 - **Aile ouest** : **cabinet de la Reine**, fenêtre sur la façade extérieure,
   au couchant.
 
-## Le jardin : plateau ovale, murets courbes
-- Jardin ovale d'environ 190 × 190 m (allongé de 40 % du nord au sud le 2026-11-15, auteur ; 190 × 135 auparavant), bordé d'un **muret courbe** à
-  balustrade (comme dans la vidéo).
-- Allée centrale du grand escalier jusqu'au massif ; allée transversale en
-  ellipse, avec deux **petites arches** de part et d'autre.
-- Parterres de buis courbes, cyprès isolés, groupes de grands feuillus sur
-  les côtés.
-- **Serre** à l'est, à mi-distance ; **fontaine à vasques** à l'ouest.
-- **L'arche de roses** est sur l'allée centrale, **entre le château et le
-  massif**, juste avant lui.
-- **Le grand massif**, avec la Rose, est au **bord sud du jardin, dans une
-  exèdre** (niche semi-circulaire du muret), avec le banc à gauche et la
-  fontaine murale à droite. Il est à environ **210 m de la façade** (2026-11-15 ; 130 auparavant) du
-  palais.
+## Le jardin v3 : à la française, puis secret — décidé (2026-11-19, auteur)
+Décision : [../decisions/0007-garden-v3-formal-then-secret.md](../decisions/0007-garden-v3-formal-then-secret.md).
+Description à recopier dans les prompts : bloc canonique de [royal-garden.md](royal-garden.md).
+
+- **Enveloppe inchangée** : jardin ovale ≈ 190 × 190 m (demi-axes 95 × 95,2 m, centre à 122 m au sud de
+  la tour), bordé d'un **muret courbe** à balustrade ; exèdre du massif au bord sud.
+- **Nord, à la française** (du pied du grand escalier, à 34 m, jusqu'à ≈ 140 m) : **quatre parterres
+  de buis en broderies** (bordures basses, motifs courbes, fleurs) ponctués d'**ifs taillés en cône** ;
+  **allée centrale droite de gravier clair** (7 m) et une **allée transversale** de gravier à ≈ 88 m ;
+  l'allée centrale finit sur un **rond-point** de gravier (≈ 140 m), entrée du bosquet.
+- **Fontaine à vasques** : au **centre du parterre sud-ouest** (x ≈ −35 m, à ≈ 115 m), dans un petit
+  rond de gravier. Vue de la terrasse, elle est à droite ; vue du massif, à gauche.
+- **Deux allées de ceinture** (gravier, 3 m), le long du muret à l'intérieur, de part et d'autre du
+  palais jusqu'au bosquet.
+  - **Allée est** : on y entre par un **portillon** dans le muret, au pied de l'aile est (≈ 40 m) ;
+    une **haute haie d'ifs** (≈ 3 m) la cache des parterres et de la terrasse ; elle passe devant la
+    **porte de la serre**. C'est le chemin d'Elias la nuit de son évasion (scènes 6-7).
+  - **Allée ouest** : symétrique, sans haute haie.
+- **Serre** (16 × 10 m, 6 m de haut) : à la **lisière est**, entre parterres et bosquet (x ≈ 62 à 78 m,
+  ≈ 136 à 146 m), porte sur l'allée est. Vue de la terrasse, à gauche ; depuis la clairière, son toit
+  de verre dépasse des arbres, à droite ; le soleil se lève derrière elle.
+- **Sud, le bosquet** (≈ 145 m jusqu'à l'exèdre) : grands arbres ronds, cyprès, massifs d'arbustes
+  et de fleurs, touffu. L'**allée centrale y serpente** ; les deux allées de ceinture la rejoignent
+  juste avant l'arche. Les deux **petites arches** marquent les entrées des allées de ceinture dans le
+  bosquet.
+- **Arche de roses** : sur l'allée, à ≈ 200 m, **seuil de la clairière** ; on ne la découvre qu'au
+  dernier virage. Elle n'est plus dans l'axe du palais vue de la terrasse.
+- **Clairière du grand massif** (avec la Rose) : au **bord sud, devant l'exèdre** ; à ≈ 217 m de la tour.
+  Au nord du massif, **deux murets courbes** (rayon 14 m) l'encadrent de part et d'autre de l'arche :
+  le **banc** devant le muret ouest, la **fontaine murale à tête de lion** dans le muret est (comme sur
+  `garden-day.png`). Fermée par les arbres : on ne la voit pas depuis le palais.
+- **Percée vers l'horloge** (2026-11-19, auteur) : depuis le point de vue des images du massif (caméra
+  `CAM_massif_ouest`, à 7 m à l'ouest de l'axe, au sud du massif, qui vise l'arche), la **tour de
+  l'horloge et son cadran restent visibles**, en haut à gauche de l'arche, au-dessus du bosquet. Le long
+  de cette ligne de vue, la végétation est limitée en hauteur (arbres plus petits ou arbustes).
+- Plan v2 (allée droite jusqu'au massif, arche dans l'axe, cyprès isolés) : remplacé.
 
 ## Palais officiel en 3D — décidé (2026-11-15, auteur)
 Le palais de la maquette est désormais un **modèle 3D** généré par l'auteur avec Tripo
@@ -84,7 +106,9 @@ tour sur sa face est, au fond du vestibule ; cabinet de la Reine sur la face ex
 de l'aile ouest.
 
 ## Dessin
-![Plan de masse v2](site-plan.png)
+![Plan du jardin v3, vue de dessus de la maquette Blender](site-plan-v3.png)
+
+Vue de dessus de la maquette (rendu Blender, palais en haut, nord), 2026-11-19 ; géométrie : `production/blender/build_garden_v3.py`. Plan de masse v2 (avant le jardin v3) : [site-plan.png](site-plan.png).
 
 Mesures proposées : corps central ≈ 72 × 20 m, ailes ≈ 19 × 29 m (jusqu'à 35 m de la façade), terrasse
 ≈ 34 × 24 m, grand escalier 14 m de large, tour ≈ 14 × 12 m au sol, en avant-corps de 1 m sur la terrasse (recalés le 2026-11-14 sur `production/refs/palace-ref.png`), jardin ≈ 190 × 195 m, exèdre ≈ 34 m de

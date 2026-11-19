@@ -52,3 +52,8 @@ vidéo de référence pour le mouvement de caméra.
 | Fixe, action qui transforme l'image | A = départ, B = arrivée (+ moment clé éventuel) |
 | Pan / tilt | une image élargie contenant les deux cadrages ; Blender en tire départ et arrivée |
 | Zoom / travelling avant | A = départ large, B = arrivée serrée (générée à part, pour la netteté) |
+
+- **Références d'images dans les prompts Magnific (Nano Banana)** — (2026-11-16, remarque de l'auteur) : toujours les désigner par la convention de Magnific, `@img1`, `@img2`… (dans l'ordre des références jointes), et non par « Image 1 » en toutes lettres. Pour Seedance, garder `@Image1` / `@Video1`, validés par les essais.
+- **Cohérence maquette ↔ prompt** : ne décrire dans le prompt que les mannequins réellement visibles dans le rendu joint (vérifier la première image avant d'écrire le prompt).
+- **Personnages 3D dans les rendus de référence** — (2026-11-16, test) : un personnage déjà présent en 3D dans le rendu Blender joint (`@img1`) est redessiné par Nano Banana à sa taille et à sa place ; un mannequin de couleur ne l'est pas de façon fiable. Dire dans le prompt quels personnages sont déjà en 3D (« garder exactement leur taille et leur place ») et quels blocs sont des emplacements. Ne jamais donner de taille relative en mots (« une tête de plus ») qui contredise la perspective du rendu.
+- **Références d'objets récurrents** — (2026-11-17, idée de l'auteur) : Nano Banana 2.1 garde jusqu'à 10 objets en plus de 4 personnages, et Magnific accepte 12 références par génération. Joindre la planche d'un objet récurrent (oranger en pot, pendentif, télescope…) dès qu'il est visible, et le désigner dans le prompt par son `@imgN`.

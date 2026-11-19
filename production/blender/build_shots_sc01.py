@@ -46,8 +46,12 @@ def survol_pose(g):
 
 PATHS = {"descente": descente_pose, "survol": survol_pose}
 
+# 2026-11-18 : palais officiel Tripo (AUR_12 + orangers AUR_13) à la place des blocs AUR_10/AUR_11 ;
+# les collections des personnages 3D (AUR_31/32) ne servent pas à la scène 1.
+EXCLUDED = {"AUR_90_cameras", "AUR_10_palais", "AUR_11_tour", "AUR_31_persos3d", "AUR_32_persos3d_rig"}
+
 def _world_collections():
-    return [c for c in bpy.data.collections if c.name.startswith("AUR_") and c.name != "AUR_90_cameras"]
+    return [c for c in bpy.data.collections if c.name.startswith("AUR_") and c.name not in EXCLUDED]
 
 def _remove_scene(name):
     s = bpy.data.scenes.get(name)
@@ -106,6 +110,8 @@ def make_animatic(shots):
     an.frame_start = 1; an.frame_end = f - 1
     return an
 
+# 2026-11-18 : après une reconstruction, lancer place_fauteuils.py, qui remplace les fauteuils provisoires
+# par le fauteuil de terrasse 3D (et pose les mêmes rangées dans SC01-SH03).
 def build_sc01():
     src = bpy.data.scenes.get("AURELIA") or bpy.context.scene
     shots = [make_shot(n, s, src) for n, s in SHOTS.items()]

@@ -34,6 +34,7 @@ point Elias est seul, et ne l'écoute plus. Pas une méchante.
 | Psychologique | Aimante, protectrice, distraite par ses responsabilités ; s'est interdit l'imaginaire en devenant reine. |
 
 ## Apparence — décidée (2026-10-04, auteur : conforme à la planche de personnage)
+- **Taille** (2026-11-16, auteur) : 1,65 m (≈ 1,78 m avec le chignon et le diadème) ; un peu plus petite que ses conseillers, son valet et le Chambellan. Voir [heights.md](heights.md).
 - **Visage** : teint de porcelaine, yeux bruns chaleureux, lèvres rosées,
   expression sereine et douce ; paraît entre 30 et 35 ans.
 - **Cheveux** : brun foncé à noirs, rassemblés en un chignon volumineux à

@@ -1,0 +1,122 @@
+# place_garden_props.py — objets du jardin v3 en 3D (Tripo v3.1, planches choisies par l'auteur le 2026-11-19 :
+# production/refs/<objet>-sheet.png). Remplace dans la maquette les formes provisoires de build_garden_v3.py
+# (serre, fontaine à vasques, arche et petites arches, banc, fontaine murale, ifs en cône, cyprès,
+# arbres ronds) par des copies liées des modèles. Les formes provisoires sont masquées, pas supprimées.
+# Usage (world.blend ouvert, APRÈS build_garden_v3.py) :
+#   exec(...) ; import_master("greenhouse") … (un par appel : import et allègement prennent du temps) ;
+#   puis place_all().  Idempotent.
+# Maîtres : collection AUR_32_persos3d_rig (exclue des plans), masqués, nommés GARDEN_<clé>_master,
+# normalisés : base à z = 0, centrés, mis à leur taille réelle (ou à 1 m de haut pour les végétaux,
+# mis à l'échelle à chaque copie).
+import bpy, math, os
+from mathutils import Vector, Matrix
+
+HERE = os.path.dirname(bpy.data.filepath)
+P3D = os.path.join(HERE, "..", "props3d")
+MS = 217.4                       # centre du grand massif (distance au sud de la tour)
+EX_C, EX_R = (0.0, 216.3), 17.0  # exèdre
+
+# clé : fichier, faces visées après allègement, rotation autour de Z (degrés) appliquée au maillage,
+#       mesure de mise à l'échelle (axe, valeur en m)
+SPECS = {
+    "greenhouse":     ("greenhouse_tripo_v1.glb",         120000,  0, ("x", 16.0)),   # porte (face avant) vers +X = l'est
+    "tiered_fountain":("tiered_fountain_tripo_v1.glb",     60000,  0, ("xy", 7.0)),
+    "rose_arch":      ("rose_arch_tripo_v1.glb",           80000, 90, ("x", 8.0)),    # ouverture vers ±Y (allée nord-sud)
+    "bench":          ("bench_tripo_v1.glb",               30000,  0, ("y", 2.0)),    # face avant vers +X
+    "lion_fountain":  ("lion_wall_fountain_tripo_v1.glb",  50000,  0, ("y", 3.0)),    # face avant vers +X
+    "yew":            ("yew_tripo_v1.glb",                  6000,  0, ("z", 1.0)),
+    "cypress":        ("cypress_tripo_v1.glb",              6000,  0, ("z", 1.0)),
+    "linden":         ("linden_tripo_v1.glb",              25000,  0, ("z", 1.0)),
+}
+
+def _store():
+    return bpy.data.collections["AUR_32_persos3d_rig"]
+
+def import_master(key):
+    fn, target, rot, (axis, val) = SPECS[key]
+    name = f"GARDEN_{key}_master"
+    old = bpy.data.objects.get(name)
+    if old: bpy.data.objects.remove(old, do_unlink=True)
+    before = set(bpy.data.objects)
+    bpy.ops.import_scene.gltf(filepath=os.path.join(P3D, fn))
+    new = [o for o in bpy.data.objects if o not in before]
+    M = max([o for o in new if o.type == "MESH"], key=lambda o: len(o.data.polygons))
+    for o in new:
+        if o is not M: bpy.data.objects.remove(o, do_unlink=True)
+    M.name = name; M.parent = None
+    me = M.data; me.transform(M.matrix_world); M.matrix_world = Matrix.Identity(4)
+    n = len(me.polygons)
+    if n > target:
+        mod = M.modifiers.new("dec", "DECIMATE"); mod.ratio = target / n
+        dg = bpy.context.evaluated_depsgraph_get()
+        me2 = bpy.data.meshes.new_from_object(M.evaluated_get(dg)); M.modifiers.clear()
+        old_me = M.data; M.data = me2; me2.name = name + "_mesh"; bpy.data.meshes.remove(old_me)
+        me = M.data
+    if rot: me.transform(Matrix.Rotation(math.radians(rot), 4, "Z"))
+    vs = [v.co for v in me.vertices]
+    mn = Vector((min(v.x for v in vs), min(v.y for v in vs), min(v.z for v in vs)))
+    mx = Vector((max(v.x for v in vs), max(v.y for v in vs), max(v.z for v in vs)))
+    dim = mx - mn
+    size = {"x": dim.x, "y": dim.y, "z": dim.z, "xy": max(dim.x, dim.y)}[axis]
+    k = val / size; c = Vector(((mn.x + mx.x) / 2, (mn.y + mx.y) / 2, mn.z))
+    me.transform(Matrix.Scale(k, 4) @ Matrix.Translation(-c)); me.update()
+    for c_ in list(M.users_collection): c_.objects.unlink(M)
+    _store().objects.link(M); M.hide_render = True; M.hide_viewport = True
+    d = dim * k
+    return name, len(me.polygons), (round(d.x, 2), round(d.y, 2), round(d.z, 2))
+
+def _inst(key, coll, name, x, s, rotz=0.0, scale=1.0):
+    M = bpy.data.objects[f"GARDEN_{key}_master"]
+    o = M.copy(); o.data = M.data; o.name = name
+    o.location = (x, -s, 0.0); o.rotation_euler = (0, 0, math.radians(rotz)); o.scale = (scale,) * 3
+    o.hide_render = False; o.hide_viewport = False; coll.objects.link(o); return o
+
+def _hide(o):
+    o.hide_render = True; o.hide_viewport = True
+
+def _bb(o):
+    ws = [o.matrix_world @ Vector(c) for c in o.bound_box]
+    return (min(w.x for w in ws), max(w.x for w in ws), min(w.y for w in ws), max(w.y for w in ws), min(w.z for w in ws), max(w.z for w in ws))
+
+def place_all():
+    c21, c22 = bpy.data.collections["AUR_21_massif_et_reperes"], bpy.data.collections["AUR_22_arbres"]
+    for c in (c21, c22):
+        for o in [o for o in c.objects if o.name.startswith("P3D_")]: bpy.data.objects.remove(o, do_unlink=True)
+    O = bpy.data.objects; n = {}
+    # Serre : à la place du volume provisoire (porte vers l'est, sur l'allée de ceinture)
+    x0, x1, y0, y1, _, _ = _bb(O["REPERE_serre"])
+    _inst("greenhouse", c21, "P3D_serre", (x0 + x1) / 2, -(y0 + y1) / 2)
+    for nm in ("REPERE_serre", "REPERE_serre_toit", "REPERE_serre_porte"): _hide(O[nm])
+    # Fontaine à vasques
+    x0, x1, y0, y1, _, _ = _bb(O["fontaine_vasques"])
+    _inst("tiered_fountain", c21, "P3D_fontaine_vasques", (x0 + x1) / 2, -(y0 + y1) / 2)
+    for nm in ("fontaine_vasques", "fontaine_vasques_fut", "fontaine_vasques_haut"): _hide(O[nm])
+    # Arche de roses et petites arches (même modèle, réduit)
+    for nm, w in (("REPERE_arche_roses", 8.0), ("petite_arche_ouest", 4.5), ("petite_arche_est", 4.5)):
+        x0, x1, y0, y1, _, _ = _bb(O[nm])
+        _inst("rose_arch", c21, "P3D_" + nm, (x0 + x1) / 2, -(y0 + y1) / 2, scale=w / 8.0); _hide(O[nm])
+    # Banc (ouest) et fontaine murale (est), adossés au muret de l'exèdre, tournés vers le massif
+    # (murets de la clairière de build_garden_v3 : rayon 14 m autour du massif, au nord ; comme sur garden-day,
+    # le banc est à gauche et la fontaine murale à droite quand on regarde l'arche depuis le massif)
+    for key, nm, a_deg, r, old in (("bench", "P3D_banc", 220.0, 12.2, "banc"), ("lion_fountain", "P3D_fontaine_murale", 320.0, 13.1, "fontaine_murale")):
+        a = math.radians(a_deg)
+        x, s = r * math.cos(a), MS + r * math.sin(a)
+        face = math.degrees(math.atan2(math.sin(a), -math.cos(a)))   # face avant (+X) tournée vers le massif
+        _inst(key, c21, nm, x, s, rotz=face); _hide(O[old])
+    # Ifs en cône, cyprès, arbres ronds : une copie par forme provisoire, à sa taille
+    k = 0
+    for o in list(c22.objects):
+        if o.name.startswith("P3D_") or o.hide_render: continue
+        x0, x1, y0, y1, z0, z1 = _bb(o); x, s, h = (x0 + x1) / 2, -(y0 + y1) / 2, z1 - z0
+        nm = o.name
+        if nm.startswith("if_") and not nm.startswith("if_allee_") or nm.startswith("if_allee_"):
+            k += 1; _inst("yew", c22, f"P3D_if_{k:03d}", x, s, rotz=(k * 47) % 360, scale=h); _hide(o)
+        elif "cypres" in nm:
+            k += 1; _inst("cypress", c22, f"P3D_cypres_{k:03d}", x, s, rotz=(k * 53) % 360, scale=h); _hide(o)
+        elif (nm.startswith("bosquet_arbre") or nm.startswith("feuillu_bord") or nm.startswith("clairiere_arbre")) and not nm.endswith("_tronc"):
+            k += 1; _inst("linden", c22, f"P3D_arbre_{k:03d}", x, s, rotz=(k * 61) % 360, scale=z1); _hide(o)
+            tr = O.get(nm + "_tronc")
+            if tr: _hide(tr)
+    for c in (c21, c22):
+        n[c.name] = sum(1 for o in c.objects if o.name.startswith("P3D_"))
+    return n

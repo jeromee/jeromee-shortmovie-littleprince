@@ -37,6 +37,7 @@ Protagoniste. Sa curiosité le conduit vers la Rose et au cœur du mystère d'Au
   concernés.
 
 ## Apparence — décidée (2026-10-04, auteur : conforme à la planche de personnage)
+- **Taille** (2026-11-16, auteur) : 1,38 m. Il arrive à l'épaule de sa mère. Voir [heights.md](heights.md).
 - **Visage et cheveux** : peau claire, légères taches de rousseur sur le nez
   et les joues, grands yeux verts, cheveux blond moyen en bataille, frange
   balayée sur le côté.

@@ -8,9 +8,9 @@ Caméras animées, durées et vidéos de référence : `production/blender/worl
 
 | # | ID | Titre | Durée | Minutage | Personnages | Caméra | Vignettes | Statut |
 |---|---|---|---:|---|---|---|---|---|
-| 1 | [SC01-SH01](shots/SC01-SH01.md) | La planète | 4 s | 0:00–0:04 | — | Avancée plongeante depuis l'espace, 35 mm (descente continue avec SH02) | A | généré (v1, 720p + upscale) · à valider |
-| 2 | [SC01-SH02](shots/SC01-SH02.md) | La plongée | 5 s | 0:04–0:09 | — | Suite de la descente, traversée de nuages, 35 mm | (dernière image de SH01) | généré (v2, 720p, pas encore upscalé) · à valider |
-| 3 | [SC01-SH03](shots/SC01-SH03.md) | Le survol | 5 s | 0:09–0:14 | (cour au loin) | Vol avant de 25 m à 10 m sur ≈ 180 m, rapide puis de plus en plus lent, 28 mm | A (+ B contrôle) | généré (v1, 720p + upscale) · à valider |
+| 1 | [SC01-SH01](shots/SC01-SH01.md) | La planète | 4 s | 0:00–0:04 | — | Avancée plongeante depuis l'espace, 35 mm (descente continue avec SH02) | A | généré (v1, 720p + upscale, ancien palais) · vignette A refaite le 2026-11-18 (palais officiel) : vidéo à refaire |
+| 2 | [SC01-SH02](shots/SC01-SH02.md) | La plongée | 5 s | 0:04–0:09 | — | Suite de la descente, traversée de nuages, 35 mm | (dernière image de SH01) | généré (v2, 720p, ancien palais) · vignette B refaite le 2026-11-18 (palais officiel) : vidéo à refaire |
+| 3 | [SC01-SH03](shots/SC01-SH03.md) | Le survol | 5 s | 0:09–0:14 | (cour au loin) | Vol avant de 25 m à 10 m sur ≈ 180 m, rapide puis de plus en plus lent, 28 mm | A (+ B contrôle) | généré (v1, 720p + upscale, ancien palais) · vignettes A et B refaites le 2026-11-18 (palais officiel) : vidéo à refaire |
 
 ## Scène 2 — EXT. PALAIS D'AURELIA - TERRASSE - JOUR
 

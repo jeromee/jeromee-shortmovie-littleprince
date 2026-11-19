@@ -1,3 +1,5 @@
+# 2026-11-19 : le jardin construit par build() (v2 : allée droite, arche dans l'axe) est remplacé par le jardin v3
+# de build_garden_v3.py, qui reconstruit seulement AUR_20/21/22. Après un build(), relancer build_garden_v3.py.
 # Blockout d'Aurelia — construit le monde maître d'après kb/world/site-plan.md (v2).
 # Usage dans Blender : exec(compile(open(chemin, encoding="utf-8").read(), chemin, "exec")) ; build()
 # Idempotent : supprime et reconstruit les collections « AUR_* ». Ne touche à rien d'autre.

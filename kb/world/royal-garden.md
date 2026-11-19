@@ -1,6 +1,6 @@
 # Le Jardin royal d'Aurelia
 
-Statut : décidé (2026-11-13, auteur) · Sources : [import] §3, [image] `Import/Garden with Rose 01.png`
+Statut : décidé (2026-11-13, auteur ; jardin v3 le 2026-11-19) · Sources : [import] §3, [image] `Import/Garden with Rose 01.png`
 
 ## Description
 Le jardin derrière le palais d'Aurelia — vaste et enchanté malgré la taille de
@@ -34,7 +34,33 @@ Mêmes cadrage et composition que l'image de concept, avec le **palais officiel*
 | Nuit, après le dôme | 12 | `production/refs/garden-night-golden-snow.png` | neige d'or, Rose pâle aux pétales tombés, **serre détruite** (squelette fumant, braises) ; dôme invisible, confondu avec le ciel |
 | Aube | 13 | `production/refs/garden-dawn.png` | lumière rose et dorée, cratères fumants, squelette de la serre |
 
+**Jardin v3 (2026-11-19)** : nouvelles versions de ces quatre images et de `palace-aerial.png`, tirées de la maquette v3, en attente du choix de l'auteur : `production/refs/candidates/jardin-v3/` (README : prompts et références). Depuis le massif, la serre n'est plus visible ; aux scènes 12 et 13, seule une fumée derrière les arbres la rappelle.
+
 **Composition** : le palais est en haut à gauche, pas dans l'axe derrière l'arche. C'est cohérent avec le plan si la caméra se tient à ≈ 7 m à l'ouest de l'axe, près du massif, et vise l'arche : le palais, à ≈ 210 m, apparaît alors à gauche de l'arche, et la serre à droite. Cela évite l'enfilade arche-palais, trop symétrique (remarque de l'auteur). Règle pour les plans tournés au massif : préférer ces axes décalés.
+
+## Bloc canonique du jardin v3 — décidé (2026-11-19, auteur)
+À recopier **mot pour mot** dans tout prompt où le jardin est visible, puis à compléter par ce que le
+plan montre (point de vue, lumière, personnages). Plan détaillé : [site-plan.md](site-plan.md) ;
+décision : [../decisions/0007-garden-v3-formal-then-secret.md](../decisions/0007-garden-v3-formal-then-secret.md).
+Il remplace, pour le jardin dans son ensemble, le verrou ci-dessous (qui reste valable pour la vue
+rapprochée du massif, sauf les « allées de dalles » : les allées sont en gravier).
+
+**FR (référence)**
+> Le jardin royal d'Aurelia, en 1830, riche et fourni, jamais dénudé. Au pied du grand escalier du
+> palais, un jardin à la française : quatre parterres de buis taillés en broderies courbes, garnis de
+> roses et de lavande, ponctués d'ifs taillés en cône ; des allées de gravier clair ; au centre du
+> parterre sud-ouest, une fontaine de pierre à vasques. Le long du muret courbe à balustrade, deux
+> allées de ceinture en gravier ; celle de l'est court derrière une haute haie d'ifs et passe devant
+> une serre victorienne de verre et de fer, à la lisière est. Plus au sud, le jardin devient un
+> bosquet touffu et romantique — grands arbres ronds, cyprès, massifs d'arbustes et de fleurs — où
+> l'allée serpente jusqu'à une arche de pierre couverte de rosiers grimpants roses et lilas, seuil
+> d'une clairière secrète : le grand massif rond de roses roses et pêche, bordé de pierres, dans une
+> exèdre du muret, avec un banc de bois à l'ouest et une fontaine murale à tête de lion à l'est.
+
+**EN (à coller)**
+```text
+The royal garden of Aurelia in 1830, rich and lush, never bare. At the foot of the palace's grand staircase, a French formal garden: four parterres of clipped boxwood in curving embroidery patterns, filled with roses and lavender, punctuated by yews clipped into cones; pale gravel paths; at the centre of the south-west parterre, a tiered stone fountain. Along the curved low wall with its balustrade, two gravel perimeter paths; the eastern one runs behind a tall yew hedge and passes a Victorian glass-and-iron greenhouse on the eastern edge. Further south, the garden turns into a dense, romantic grove — tall round trees, cypresses, clumps of shrubs and flowers — where the path winds to a stone arch covered in pink and lilac climbing roses, the threshold of a secret clearing: the large round stone-edged bed of pink and peach roses, in a semicircular recess of the wall, with a wooden bench on the west and a lion-head wall fountain on the east.
+```
 
 ## Verrou visuel (pour les prompts — d'après l'image de concept)
 

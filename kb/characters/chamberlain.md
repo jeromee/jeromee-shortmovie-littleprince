@@ -9,6 +9,7 @@ adultes : poli, amusé, aveugle au merveilleux. C'est lui qui se moque gentiment
 pour « un feu de joie ». Ni méchant ni ridicule : simplement sourd.
 
 ## Apparence
+- **Taille** (2026-11-16, auteur) : 1,85 m, le plus grand de la cour, légèrement voûté. Voir [heights.md](heights.md).
 - 60 ans, grand et maigre, légèrement voûté vers les gens à qui il parle.
 - Visage rond et affable (revu le 2026-11-15, auteur) : nez court et arrondi, joues pleines un peu roses, yeux rieurs, sourcils doux, sourire courtois. Rasé, sans lunettes : il ne doit pas ressembler au grand conseiller à favoris ([advisers.md](advisers.md)).
 - Perruque blanche poudrée à catogan, déjà démodée en 1830 : il vit dans le passé.
@@ -45,3 +46,5 @@ Character reference sheet, stylized 3D animated feature-film look, 16:9, plain w
 
 ## Liens
 [queen-elara.md](queen-elara.md) · [extras.md](extras.md) · [footman.md](footman.md)
+
+Modèle 3D (test, 2026-11-17) : `production/characters3d/chamberlain_tripo_v1_rig.glb` (Tripo v3.1 multivue + rig), vues sources dans `production/characters3d/turnarounds/chamberlain_*.png`.

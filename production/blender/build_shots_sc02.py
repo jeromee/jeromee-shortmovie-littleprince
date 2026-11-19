@@ -52,6 +52,8 @@ def figure(coll, name, key, keys, face=None):
         piv.rotation_euler = (0, 0, math.radians(cap)); piv.keyframe_insert("rotation_euler", frame=1 + round(t * FPS))
     return piv
 
+# 2026-11-18 : après une reconstruction, lancer place_fauteuils.py, qui remplace les fauteuils provisoires
+# par le fauteuil de terrasse 3D (et pose les mêmes rangées dans SC01-SH03).
 def props(coll):
     """Fauteuils en deux rangées tournées vers le jardin, de part et d'autre d'une allée centrale
     (le public du « spectacle des étoiles »), télescope près de la balustrade sud, lanternes."""
@@ -74,14 +76,14 @@ SHOTS = {
     # la Reine et sa suite traversent de gauche à droite ; Elias monte le grand escalier (à droite) et court vers elle.
     "SC02-SH01": dict(title="La terrasse", dur=6, lens=28,
         cam=[(0, (-12.5, -22.6, T + 2.2), (8.0, -7.0, T + 5.5)), (6, (-11.9, -21.9, T + 2.2), (8.0, -7.0, T + 5.5))],
-        figs=[("REINE", "queen", [(0, -8, -15), (6, -2, -15)], [(0, 90)]),
-              ("CONSEILLER_1", "adviser", [(0, -9.5, -14.0), (6, -3.5, -14.0)], [(0, 90)]),
-              ("CONSEILLER_2", "adviser", [(0, -10.2, -15.6), (6, -4.2, -15.6)], [(0, 90)]),
-              ("CONSEILLER_3", "adviser", [(0, -11.0, -14.6), (6, -5.0, -14.6)], [(0, 90)]),
-              ("CHAMBELLAN", "chamberlain", [(0, -12.2, -15.2), (6, -6.2, -15.2)], [(0, 90)]),
+        figs=[("REINE", "queen", [(0, -3.0, -13.5), (6, 3.0, -13.5)], [(0, 90)]),
+              ("CONSEILLER_1", "adviser", [(0, -4.5, -12.6), (6, 1.5, -12.6)], [(0, 90)]),
+              ("CONSEILLER_2", "adviser", [(0, -5.2, -14.2), (6, 0.8, -14.2)], [(0, 90)]),
+              ("CONSEILLER_3", "adviser", [(0, -6.0, -13.2), (6, 0.0, -13.2)], [(0, 90)]),
+              ("CHAMBELLAN", "chamberlain", [(0, -7.2, -13.9), (6, -1.2, -13.9)], [(0, 90)]),
               ("VALET_1", "footman", [(0, -7.0, -23.5), (6, -6.6, -23.5)], [(0, 0)]),
               ("VALET_2", "footman", [(0, 8.6, -21.2), (6, 8.2, -21.2)], [(0, -90)]),
-              ("ELIAS", "elias", [(0, 1.8, -35.5, 0.0), (1.2, 1.7, -33.6, 0.2), (2.6, 1.6, -28.4, 3.0), (3.0, 1.6, -27.0, T), (6, -0.8, -17.0)], [(0, 180), (3.0, 175)])]),
+              ("ELIAS", "elias", [(0, 1.8, -35.5, 0.0), (1.2, 1.7, -33.6, 0.2), (2.6, 1.6, -28.4, 3.0), (3.0, 1.6, -27.0, T), (6, 1.5, -15.5)], [(0, 180), (3.0, 175)])]),
     "SC02-SH02": dict(title="Elle sonne", dur=7, lens=35,
         cam=[(0, (-2.6, -19.8, T + 1.35), (-2.0, -14.5, T + 1.25)), (7, (5.4, -19.8, T + 1.35), (6.0, -14.5, T + 1.25))],
         figs=[("REINE", "queen", [(0, -2.0, -14.2), (7, 6.0, -14.2)], [(0, 90)]),
@@ -91,14 +93,14 @@ SHOTS = {
     "SC02-SH03": dict(title="Les rires", dur=4, lens=50,
         cam=[(0, (5.2, -18.6, T + 1.6), (2.4, -13.8, T + 1.55)), (4, (5.4, -18.6, T + 1.6), (2.8, -13.8, T + 1.55))],
         figs=[("CHAMBELLAN", "chamberlain", [(0, 2.0, -14.6), (4, 2.6, -14.6)], [(0, 60)]),
-              ("CONSEILLER_1", "adviser", [(0, 3.4, -13.4), (4, 3.8, -13.4)], [(0, 200)]),
-              ("CONSEILLER_2", "adviser", [(0, 1.0, -13.2), (4, 1.4, -13.2)], [(0, 120)]),
-              ("CONSEILLER_3", "adviser", [(0, 0.4, -14.8), (4, 0.8, -14.8)], [(0, 90)])]),
+              ("CONSEILLER_1", "adviser", [(0, 3.4, -13.4), (4, 3.8, -13.4)], [(0, -49)]),  # revu 2026-11-17 (personnages 3D)
+              ("CONSEILLER_2", "adviser", [(0, 1.0, -12.9), (4, 1.4, -12.9)], [(0, 30)]),
+              ("CONSEILLER_3", "adviser", [(0, 0.6, -14.9), (4, 1.0, -14.9)], [(0, 80)])]),
     "SC02-SH04": dict(title="Elias", dur=3, lens=75,
         cam=[(0, (6.6, -18.2, T + 1.2), (5.2, -15.4, T + 1.12)), (3, (6.6, -18.1, T + 1.2), (5.2, -15.4, T + 1.12))],
-        figs=[("ELIAS", "elias", [(0, 5.2, -15.4), (3, 5.2, -15.4)], [(0, 150)])]),
+        figs=[("ELIAS", "elias", [(0, 5.2, -15.4), (3, 5.2, -15.4)], [(0, 10)])]),  # revu 2026-11-17 : trois quarts face, il détourne les yeux des adultes
     "SC02-SH05": dict(title="Je ne m'en souviens pas", dur=9, lens=50,
-        cam=[(0, (5.3, -17.1, T + 1.45), (7.0, -14.0, T + 1.55)), (9, (5.4, -16.9, T + 1.45), (7.0, -14.0, T + 1.55))],
+        cam=[(0, (6.05, -17.9, T + 1.22), (7.0, -14.0, T + 1.45)), (9, (5.97, -17.72, T + 1.22), (7.0, -14.0, T + 1.45))],  # revu 2026-11-16 avec les personnages 3D : caméra à hauteur d'épaule d'Elias (1,22 m)
         figs=[("REINE", "queen", [(0, 7.0, -14.0), (9, 7.0, -14.0)], [(0, -30)]),
               ("ELIAS", "elias", [(0, 6.0, -15.6), (9, 6.0, -15.6)], [(0, 150)]),
               ("CHAMBELLAN", "chamberlain", [(0, 9.0, -13.0), (9, 9.0, -13.0)], [(0, -60)])]),
@@ -110,7 +112,7 @@ SHOTS = {
 # SH06 : Elias descend l'escalier (8 marches de 0,5 m) de t = 4 s à t = 7 s ; animé à part (z).
 
 def _world_collections():
-    return [c for c in bpy.data.collections if c.name.startswith("AUR_") and c.name not in ("AUR_90_cameras", "AUR_30_personnages", "AUR_10_palais", "AUR_11_tour")]
+    return [c for c in bpy.data.collections if c.name.startswith("AUR_") and c.name not in ("AUR_90_cameras", "AUR_30_personnages", "AUR_31_persos3d", "AUR_32_persos3d_rig", "AUR_10_palais", "AUR_11_tour")]
 
 def _remove_scene(name):
     s = bpy.data.scenes.get(name)

@@ -9,6 +9,7 @@
 | [characters/chamberlain.md](characters/chamberlain.md) | décidé | Le Chambellan, courtisan âgé, regard des adultes |
 | [characters/footman.md](characters/footman.md) | décidé | Le valet de la Reine (scènes 4–5) |
 | [characters/advisers.md](characters/advisers.md) | décidé | Les trois conseillers de la Reine (scène 2) |
+| [characters/heights.md](characters/heights.md) | décidé | Tailles des personnages et échelle (toise) |
 | [characters/extras.md](characters/extras.md) | décidé | Figurants : conseillers, valets, jardiniers, la cour |
 | [world/palace-sets.md](world/palace-sets.md) | décidé | Terrasse, cabinet de la Reine, chambre d'Elias, façade, tour de l'horloge |
 | [world/props-and-effects.md](world/props-and-effects.md) | décidé | Clochette, pendentif-clé, pétale, pluie d'étoiles, dôme, neige d'or, éclat d'or, serre |

@@ -9,6 +9,8 @@ petits carnets et rient poliment avec le Chambellan quand il se moque du prince
 On les voit de près en scène 2 (SC02-SH03).
 
 ## Les trois
+Tailles (2026-11-16, auteur) : (1) 1,80 m · (2) 1,62 m · (3) 1,76 m. Voir [heights.md](heights.md).
+
 | # | Silhouette et visage | Habit |
 |---|---|---|
 | 1 | Grand et maigre, long visage, favoris gris soignés, cheveux gris courts, lunettes en demi-lune | Habit de cour vert bouteille brodé d'argent, gilet gris brodé, jabot de dentelle, culotte verte, bas blancs |
