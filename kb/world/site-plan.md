@@ -152,3 +152,12 @@ D'après la référence aérienne `production/refs/palace-aerial.png` (vue du su
 
 ## Liens
 [aurelia.md](aurelia.md) · [royal-garden.md](royal-garden.md) · [palace-sets.md](palace-sets.md)
+
+## Jardins latéraux et clairière resserrée (2026-11-20, auteur)
+Voir [../decisions/0008-side-gardens-intimate-clearing.md](../decisions/0008-side-gardens-intimate-clearing.md) ; plan de principe `site-plan-jardins-lateraux-proposition.jpg`.
+- Le muret à balustrade entoure aussi les deux ailes jusqu'à l'arrière du palais : jardins latéraux (allée de gravier courbe le long de la façade, bordure de buis, cyprès, grands arbres ronds). **Plus de portillon** : l'allée latérale est rejoint l'allée de ceinture est.
+- Chemin d'Elias la nuit : fenêtre (aile est) → jardin latéral est → allée de ceinture est → serre → bosquet.
+- Clairière : massif Ø 6 m, murets à 7,5 m, arche à 8 m, exèdre de 10 m ; ouverture tournée de 18° vers l'est. Caméra `CAM_massif_ouest` déplacée dans l'axe arche-massif (2,5 m à l'ouest, 7,6 m au sud du centre du massif, 1,6 m de haut, 24 mm).
+
+## Échelle (2026-11-20, auteur)
+**Toutes les cotes de cette page et des scripts sont d'avant la réduction : dans la maquette, multiplier par 0,8.** Les personnages, fauteuils, banc, fontaine murale, télescope et orangers gardent leur taille réelle. Voir [../decisions/0009-echelle-environnement.md](../decisions/0009-echelle-environnement.md).

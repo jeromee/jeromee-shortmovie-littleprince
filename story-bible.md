@@ -29,10 +29,8 @@
 - Séquence : 0 Intention → 1 Prémisse et logline → 2 Personnages → 3 Monde
   (boucle 1–3 jusqu'à une logline stable) → 4 Synopsis → 5 Séquencier →
   6 Writer's draft → 7 Shooting script → 8 Découpage technique (blocs CapCut).
-- Étape : **8 — Découpage technique** (shooting script verrouillé le 2026-11-02)
-- Prochaine étape : concevoir en texte les éléments nouveaux (personnages,
-  décors, accessoires — liste dans `work/drafts/production-breakdown.md`), puis
-  découper chaque scène en plans avec leurs blocs CapCut.
+- Étape : **8 — Découpage technique et production des plans** (shooting script verrouillé le 2026-11-02 ; scènes 1 et 2 en production, SC02-SH06 terminé le 2026-11-20)
+- Prochaine étape : voir le bloc « Prochaine étape » en fin de document (mis à jour le 2026-11-20 au soir) — valider les mouvements de caméra de SC02-SH01 à SH05, puis produire ces plans sur le modèle de SC02-SH06.
 
 ## Décidé (toute modification doit être journalisée)
 - Emprunts au *Petit Prince* **assumés** ; histoire construite librement. Empruntés
@@ -298,9 +296,62 @@ Grille de minutage visée pour 5:00 (BS2 mis à l'échelle, pour référence) :
 
 - 2026-11-19 ← « Ok pour tout » (auteur) : (1) **parterres étoffés** dans la maquette (69 petits massifs de roses et de lavande dans les compartiments de gazon, `build_garden_v3.py`) ; (2) **références du jardin refaites** d'après la maquette v3 — palace-aerial, garden-day, puis nuit, neige d'or et aube déclinées de garden-day : candidates dans `production/refs/candidates/jardin-v3/` (README avec prompts FR/EN et références), les originaux de `production/refs/` sont conservés tant que l'auteur n'a pas choisi ; la serre n'est plus visible depuis le massif (la serre détruite des scènes 12–13 demandera son propre plan) ; (3) **vignettes refaites** pour SC01-SH03 A et B et SC02-SH01 à SH05 (orangers 2,50 m, fauteuils par paires) : `candidates/<plan>/<plan>_A|B_v3jardin_gpt26_nb1|nb2.png`, planche `production/storyboard/candidates/_planche_vignettes_v3jardin.jpg`. Coût : 3 240 crédits (24 images GPT 2.6).
 
-Prochaine étape (mise à jour le 2026-11-19) :
-1. **Choisir les références du jardin v3** (`production/refs/candidates/jardin-v3/_planche_refs_jardin_v3.jpg` ; proposition : nb1 partout) puis les copier dans `production/refs/` à la place des anciennes (anciennes gardées dans `production/refs/candidates/jardin-v2/`).
-2. **Valider les vignettes jardin v3** (`production/storyboard/candidates/_planche_vignettes_v3jardin.jpg` ; proposition : SC01-SH03 A nb1, B nb1 ; SC02-SH01 nb1, SH02 nb1, SH03 nb2, SH04 nb1, SH05 nb1) ; SC02-SH06 est déjà retenue. Copier chaque choix en `production/storyboard/<plan>_A|B.png`, mettre à jour les cartes Seedance.
-3. Trancher la trajectoire du survol SC01-SH03 (voir sa fiche) et la composition de garden-day (massif au premier plan ou non).
-4. Serre détruite (planche, puis modèle), puis découpage des scènes 3 à 13.
-Repères techniques : palais `PALAIS_officiel_sans_orangers` (l'original est masqué) et orangers posés par `place_orangers.py` ; personnages maîtres riggés dans la collection `AUR_32_persos3d_rig` (scène `TEST_PERSOS3D`), modèles dans `production/characters3d/` ; toise `kb/characters/sheets/lineup_3d.png`. Règles de prompt dans `production/README.md` (personnages déjà en 3D : « garder exactement leur taille et leur place » ; objets récurrents joints en référence ; pas de taille relative en mots). Personnages encore à faire en 3D quand ils apparaîtront : la Rose, et tout figurant nouveau (même méthode : vue tournante Nano Banana → Tripo v3.1 multivue → rig → taille dans `kb/characters/heights.md`).
+- 2026-11-19 ← choix de l'auteur : références `palace-aerial`, `garden-day`, `garden-night`, `garden-night-golden-snow`, `garden-dawn` = candidates `*_v3_gpt26_nb1`, copiées dans `production/refs/` (anciennes dans `production/refs/candidates/jardin-v2/`) ; vignettes retenues SC01-SH03 B (`v3jardin_gpt26_nb2`), SC02-SH01 (`nb2`), SC02-SH03 (`nb1`), SC02-SH05 (`nb1`). Corrections : SC01-SH03 A nb2 retouchée sans la serre (inventée près du palais) ; SC02-SH04 refaite avec un prompt qui redessine le visage d'après la planche au lieu de recopier le modèle 3D (GPT 2.6 et Nano Banana 2.1) ; SC02-SH02 : grosse tête d'Elias = perspective (Elias 1,3 m plus près de la caméra que la Reine). **Clairière du massif jugée trop grande** (remarque de l'auteur) : en effet, exèdre de 17 m, murets à 14 m, arche à 17 m du massif (cotes inchangées depuis la v2, mais les anciennes références ne suivaient pas la maquette) ; variante « resserrée » préparée dans `build_garden_v3.py` (`CLAIRIERE`), pas encore construite. Coût : 940 crédits.
+
+- 2026-11-20 SC02-SH04 ← l'auteur aime l'Elias de `visage_nb21_nb2` (Nano Banana 2.1) mais pas son décor inventé : décor remplacé par celui du plan, Elias inchangé (GPT 2.6 et Nano Banana 2.1, 400 crédits) ; proposée `SC02-SH04_A_visage_nb21_nb2_decor_nb21_nb2`. SC01-SH03 A : proposée `SC01-SH03_A_v3jardin_sans-serre_gpt26_nb2`.
+
+- 2026-11-20 ← auteur : SC02-SH04 = `visage_nb21_nb2_decor_nb21_nb2` (provisoire) ; **règle : les vignettes retenues sortent du prompt seul + références, pas de retouche** (`production/README.md`). Générations directes faites pour SH04 (Nano Banana 2.1 et GPT 2.6) et SH06 (GPT 2.6, maquette refaite) : le prompt seul donne le bon résultat. Clairière resserrée construite et rendue (`storyboard/candidates/_jardin_v3/v3c_massif_resserree.png`) puis remise en v3 en attendant le choix. **Côtés du palais** ← auteur : trop loin de `palace-ref`, et Elias sortirait de l'enceinte par sa fenêtre de l'aile est ; proposition de jardins latéraux (muret prolongé autour des ailes, allées latérales de gravier, arbres et cyprès) : `kb/world/site-plan-jardins-lateraux-proposition.jpg`. Coût : 660 crédits.
+
+- 2026-11-20 ← auteur : SC02-SH04 = `SC02-SH04_A_v3jardin_prompt_gpt26_nb2` (génération directe). **Jardins latéraux** adoptés et **clairière resserrée, ouverture tournée de 18° vers l'est**, banc retourné ; massif ramené à Ø 6 m (kb/decisions/0008). Maquette construite et enregistrée (`build_garden_v3.py`, `place_garden_props.py`) ; shooting script, scène 5 : « En bas, le jardin de l'aile, désert ; au-delà du muret, le verger. » Essais en génération directe : `production/refs/candidates/jardin-v4/garden-day_v4_gpt26_nb1|nb2.png`, `palace-aerial_v4_gpt26_nb1|nb2.png`. **Massif de la Rose** ← demande de l'auteur : planches `production/refs/candidates/rose-bed/rose-bed_gpt26_nb1|nb2.png`. Coût : 810 crédits.
+
+- 2026-11-20 ← auteur : références retenues `rose-bed-sheet.png` (= `rose-bed_gpt26_nb2`), `garden-day.png` (= `garden-day_v4_gpt26_nb2`), `palace-aerial.png` (= `palace-aerial_v4_gpt26_nb2`). Massif converti en 3D (Tripo v3.1, posé dans la maquette, aplati à 1,3 m). Correction : les objets 3D du jardin ignoraient leur rotation (mode quaternion des imports glTF) — banc et fontaine murale désormais tournés vers le massif, arche tournée de 18°. Déclinaisons nuit, neige d'or, aube de `garden-day` v4 nb2 et SC01-SH03 A en génération directe : `production/refs/candidates/jardin-v4/`, `storyboard/candidates/SC01-SH03/SC01-SH03_A_v4jardin_gpt26_nb1|nb2.png`. Coût : 2 240 crédits (Tripo 1 160 + 8 images).
+
+- 2026-11-20 ← auteur : `garden-night.png` = `garden-night_v4_gpt26_nb2`, `garden-night-golden-snow.png` = `..._v4_gpt26_nb1`, `garden-dawn.png` = `garden-dawn_v4_gpt26_nb1`. SC01-SH03 A : l'arche « dans l'axe » de `v4jardin_gpt26_nb1` est une invention de GPT 2.6 (hors champ dans la maquette) ; prompt corrigé (« ne dessiner que ce que montre @img1… »), candidates `SC01-SH03_A_v4jardin_horschamp_gpt26_nb1|nb2` (270 crédits).
+
+- 2026-11-20 ← auteur : SC01-SH03 A = `SC01-SH03_A_v4jardin_horschamp_gpt26_nb1` → `production/storyboard/SC01-SH03_A.png`.
+
+- 2026-11-20 ← auteur : SC02-SH06 = `SC02-SH06_A_v3jardin_gpt26_nb2` → `production/storyboard/SC02-SH06_A.png`. Remarque de l'auteur : personnages trop petits sur la grande terrasse vide (comparaison : porte de la tour, 4 m) ; pistes à trancher : réduire l'environnement ×0,8, garnir la terrasse, choix d'objectifs.
+
+- 2026-11-20 ← auteur (« d'accord avec tout ») : **environnement réduit ×0,8, personnages et objets à taille humaine à taille réelle** (`echelle_monde.py`, kb/decisions/0009) ; références sans personnage inchangées. Planches du velum et de la table de rafraîchissements (`production/refs/candidates/terrace-velum/`, `refreshment-table/`, 540 crédits). Rendus avant/après : `production/storyboard/candidates/_echelle/`.
+
+- 2026-11-20 ← auteur : velum = `terrace-velum_gpt26_nb2` → `production/refs/terrace-velum-sheet.png` ; table = `refreshment-table_gpt26_nb1` → `production/refs/refreshment-table-sheet.png`. Conversion Tripo v3.1 (vues de trois-quarts, 2 320 crédits).
+
+- 2026-11-20 [claude] : velums et table posés (`place_terrasse.py`) ; **deux velums** de part et d'autre de l'allée au lieu d'un seul, qui cachait Elias dans SC02-SH06 (kb/decisions/0009). Caméras de SC02-SH02, SH03, SH04 remontées à hauteur d'œil réelle (et SH02 avancée de 0,7 m). Vignettes refaites au prompt seul (GPT 2.6) pour SC01-SH03 B et SC02-SH01 à SH06 : candidates `*_echelle08_gpt26_nb1|nb2`, planches `production/storyboard/candidates/_planche_echelle08_1.jpg` et `_2.jpg` (1 890 crédits).
+
+- 2026-11-20 ← auteur : vignettes retenues `SC01-SH03_B_echelle08_gpt26_nb1`, `SC02-SH01_A_echelle08_gpt26_nb1`, `SC02-SH02_A_echelle08_gpt26_nb1`, `SC02-SH03_A_echelle08_gpt26_nb1`, `SC02-SH04_A_echelle08_gpt26_nb1`, `SC02-SH05_A_echelle08_gpt26_nb2`, `SC02-SH06_A_echelle08_gpt26_nb2` → `production/storyboard/` (anciennes en `candidates/<plan>/*_retenue-avant-echelle08.png`). Animatiques de SC01-SH03 et de la scène 2 refaites à l'échelle 0,8 (anciennes dans `production/animatic/_avant-echelle08/`). Cartes Seedance de SC02-SH01 et SH06 mises à jour (velums ; lumière de SH06 venant de la gauche, l'est).
+
+- 2026-11-20 ← auteur : plan test vidéo SC02-SH06 (Seedance 2.5, 720p, 7 s, 3 640 crédits) → `production/video/SC02-SH06_seedance25_720p_v1.mp4`. `garden-day.png` retiré des références de la carte (il montre la clairière depuis la v4).
+
+- 2026-11-20 ← auteur : essai 1 rejeté (pas de son ; Elias glisse, figé, et s'enfonce dans les marches). Cause : l'animatique en @Video1 (modèle rigide sans cycle de marche) — règle ajoutée dans `production/README.md`. Essai 2 sans @Video1, vignette en première image, marche décrite (3 080 crédits) : `production/video/SC02-SH06_seedance25_720p_v2.mp4`.
+
+- 2026-11-20 ← auteur : mouvement de caméra plus riche pour SC02-SH06 (départ bas et serré, grue + zoom arrière, accompagne Elias, fin au cadrage actuel) ; première et dernière images à choisir. [claude] Son de Seedance quasi muet aussi sans « no music » (test 800 crédits, signalé à Magnific) ; bruitage Mirelo SFX 2.0 sur l'essai 2 (294 crédits). Détail dans la fiche SC02-SH06.
+
+- 2026-11-20 ← auteur : première image `SC02-SH06_A_first_gpt26_nb1` ; caméra qui doit avancer vers le jardin en s'élevant (corrigé : +4 m) ; dernière image refaite sans second prince (`SC02-SH06_A_last2_gpt26_nb1|nb2`, à choisir). Son Seedance présent mais très faible ; bruitage Mirelo retenu.
+
+- 2026-11-20 ← auteur : dernière image `SC02-SH06_A_last2_gpt26_nb2`, montage A. Essai 3 (3 080 + 294 crédits) : `production/video/SC02-SH06_seedance25_720p_v3_bruitage-mirelo2.mp4`. Règle : dialogues, bruitages et musique sur pistes séparées (`production/audio/<plan>/`, `production/README.md`).
+
+- 2026-11-20 ← auteur : caméra de SC02-SH06 validée. Clochette mal placée par Mirelo → sons ponctuels générés à part et posés à la main (clochette à 0,9 s) ; mixages A et B à choisir (633 crédits).
+
+- 2026-11-20 ← auteur : **SC02-SH06 retenu** (mixage B) → `production/video/SC02-SH06_retenu.mp4`. Méthode validée, modèle pour les autres plans (fiche SC02-SH06).
+
+- 2026-11-20 [claude] : mouvements de caméra proposés pour SC02-SH01 à SH05 (travelling latéral avec parallaxe pour SH01, approches lentes pour SH02 à SH05), animatique de la scène 2 refaite ; en attente de validation par l'auteur.
+
+Prochaine étape (mise à jour le 2026-11-20 au soir — reprise dans une nouvelle session) :
+
+**Où en est-on.** Scènes 1 et 2 : vignettes retenues dans `production/storyboard/` (échelle 0,8, velums et table posés). **SC02-SH06 est terminé** (image + son) : `production/video/SC02-SH06_retenu.mp4`, pistes dans `production/audio/SC02-SH06/`. Sa fiche (`production/shots/SC02-SH06.md`, section « Méthode validée ») sert de modèle pour tous les autres plans.
+
+**À faire, dans l'ordre :**
+1. **Faire valider par l'auteur les mouvements de caméra de SC02-SH01 à SH05** (proposés le 2026-11-20, pas encore validés) : animatique `production/animatic/SC02_animatic.mp4`, planche début / fin `production/storyboard/candidates/_mvt_sc02/_planche_mvt_sc02.jpg`, description dans chaque fiche (section « Mouvement de caméra revu »). Ajuster dans `world.blend` si demandé.
+2. **Choisir avec l'auteur la façon de produire les voix** de SH01 à SH05 (« Maman ! » dans SH01, répliques de la Reine et du Chambellan) : Seedance (répliques entre guillemets, son très faible via Magnific), doublage Magnific (voix exacte et constante d'un plan à l'autre) ou voix CapCut. Toujours sur une piste séparée.
+3. Pour chaque plan SH01 à SH05, suivre la méthode validée : maquette de la première et de la dernière image (rendu Blender 1080p) → images au prompt seul, GPT 2.6, 2 candidates, noms exacts donnés à l'auteur → Seedance 2.5 en **montage A** (première + dernière images ; mouvement et action décrits seconde par seconde ; 720p) → bruitage Mirelo SFX 2.0 → sons ponctuels générés à part (`audio_sfx_generate`) et posés à la main → pistes séparées dans `production/audio/<plan>/`. Environ 3 400 crédits par plan, plus les images.
+4. Puis la scène 1 (SC01-SH01 à SH03) de la même façon ; la trajectoire du survol SC01-SH03 est droite dans l'axe (à courber si l'auteur le souhaite).
+5. Plus tard : musique (l'auteur va regarder AIVA ; Suno en second recours), upscale des plans retenus, montage CapCut ; serre détruite (planche, puis modèle) ; découpage des scènes 3 à 13.
+En option : SC02-SH02, reculer Elias d'environ 1,3 m si l'auteur trouve encore sa tête trop grosse.
+
+**Pièges connus (à lire avant de toucher à la maquette ou à Seedance) :**
+- Maquette : l'environnement est réduit ×0,8 par l'Empty `ECHELLE_MONDE` ; les scripts et `kb/world/site-plan.md` sont en cotes d'avant la réduction. Les caméras de la scène 2 ont été retouchées directement dans `world.blend` : **ne pas relancer `build_shots_sc02.py`**, qui effacerait ces réglages. Anciennes animations gardées dans les actions `*_avant-mvt-2026-11-20`. Velums et table : `production/blender/place_terrasse.py`. Ne pas toucher à Blender si l'auteur y a un fichier ouvert non enregistré.
+- Seedance via Magnific : **jamais l'animatique en @Video1 quand des personnages y bougent** (modèles rigides qui glissent ; Seedance recopie le glissement) ; première + dernière images excluent toute autre référence ; le son natif est présent mais très faible.
+- Images : vignettes retenues obtenues par **prompt + références seuls, jamais par retouche** ; préciser « une seule personne » quand un personnage est petit dans le cadre ; GPT 2.6 de préférence ; jamais de modèle Flux.
+- Règles générales dans `production/README.md` ; dossier Magnific du projet : `615a4a0c-4f8f-4a60-a555-44049bbb9eaa`.
+
+Repères techniques : palais `PALAIS_officiel_sans_orangers` (l'original est masqué) et orangers posés par `place_orangers.py` ; personnages maîtres riggés dans la collection `AUR_32_persos3d_rig` (scène `TEST_PERSOS3D`), modèles dans `production/characters3d/` ; toise `kb/characters/sheets/lineup_3d.png`. Règles de prompt dans `production/README.md` (personnages déjà en 3D : « garder exactement leur taille et leur place » ; objets récurrents joints en référence ; pas de taille relative en mots). Personnages encore à faire en 3D quand ils apparaîtront : la Rose, et tout figurant nouveau (même méthode : vue tournante Nano Banana → Tripo v3.1 multivue → rig → taille dans `kb/characters/heights.md`).

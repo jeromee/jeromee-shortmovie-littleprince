@@ -34,7 +34,17 @@ et bruitages intégrés → musique libre de droits et montage dans CapCut
   « Prompt importé (v0) » pour référence ; c'est la section « Prompt actuel »
   ou les blocs CapCut qu'il faut utiliser.
 
+- **Vidéo (Seedance) : pas d'animatique en @Video1 quand des personnages y bougent** (2026-11-20, essai 1 de SC02-SH06). Les personnages de la maquette sont des modèles rigides déplacés sans cycle de marche : Seedance recopie ce glissement, même quand le prompt dit de ne reprendre que la caméra, et la référence muette a donné une piste son quasi silencieuse. Caméra fixe : `keyframes.start` = vignette + `cameraMotion` « static ». Caméra mobile : décrire le mouvement dans le prompt (ou `cameraMotion`), et ne joindre l'animatique qu'en version sans personnages.
+
+- **Son : trois familles de pistes séparées** (2026-11-20) — dialogues, bruitages et ambiances, musique — gardées à part jusqu'au mixage final dans CapCut. Une piste par plan et par famille dans `production/audio/<plan>/` (WAV 48 kHz) : `*_dialogues_*.wav`, `*_bruitage_*.wav`, `*_musique_*.wav`. Le son natif de Seedance (très faible via Magnific) sert de repère de timing ; les bruitages viennent de Mirelo SFX 2.0 (`video_soundfx`), qui ne fait pas de voix ; les dialogues viennent de Seedance (répliques entre guillemets), du doublage Magnific ou des voix CapCut ; la musique d'un service dédié.
+
 ## Vignettes de storyboard
+
+**Échelle de la maquette** (2026-11-20) : environnement réduit ×0,8, personnages et objets à taille humaine à taille réelle (`production/blender/echelle_monde.py`, à relancer après tout script qui crée des objets ; kb/decisions/0009).
+
+**Vignettes retenues : prompt + références seulement** (2026-11-20, auteur). Une vignette qui part dans CapCut doit sortir d'une génération directe, avec son prompt et ses références, pas d'une retouche d'une autre image : on préfère dépenser quelques crédits de plus et savoir que le prompt seul donne le bon résultat. Une retouche peut servir à explorer, mais le prompt doit ensuite être corrigé et la vignette régénérée.
+
+**Gros plans de personnages** (2026-11-19) : ne pas demander de « garder le personnage de la maquette et seulement l'affiner » — l'IA recopie alors le visage simplifié du modèle 3D. Dire que la maquette ne donne que le cadrage, la place, la taille et la pose ; faire redessiner le visage d'après la planche, traits décrits ; joindre une bonne vignette antérieure comme cible de finition ; décrire l'ombrage (peau, yeux, cheveux) et l'expression ; décrire le décor et ce qui n'y est pas.
 Les vignettes sont générées (Freepik / Magnific) puis montées en animatique
 dans Blender ; chaque plan en sort aussi en MP4, utilisé dans CapCut comme
 vidéo de référence pour le mouvement de caméra.

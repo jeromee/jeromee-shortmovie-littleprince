@@ -27,9 +27,26 @@ W["COLORS"].update({
 box, cyl, ball, prism, wall, arch, ribbon = (W[k] for k in ("box", "cyl", "ball", "prism", "wall", "arch", "ribbon"))
 
 GA, GB, GCs = 95.0, 95.2, 122.2          # ovale du jardin (demi-axes, centre)
-EX_C, EX_R = (0.0, 216.3), 17.0           # exèdre
+# Clairière du grand massif. "v3" : version du 2026-11-19 (exèdre de 17 m, murets à 14 m, arche à 17 m du
+# massif). "resserree" : essai du 2026-11-19 (remarque de l'auteur : espace autour du massif devenu trop
+# grand, les images d'avant étaient plus intimes) — murets à 8,5 m, arche à 9 m, exèdre de 11 m, couronne
+# d'arbres rapprochée, caméra du massif plus près. Une ligne à changer pour revenir en arrière.
+CLAIRIERE = "resserree"   # "v3" : clairière du 2026-11-19 (plus vaste, ouverte plein nord)
+# 2026-11-20 (auteur) : clairière resserrée ET ouverture tournée de ROT degrés vers l'est, pour que la caméra
+# du massif, placée dans l'axe arche-massif, voie le massif au centre, l'arche derrière et le palais en haut à
+# gauche (composition de l'image de concept), sans enfilade arche-palais. Massif ramené à 6 m de diamètre.
+CL = {"v3":        dict(ex_r=17.0, walls=14.0, gap=(245, 295), parvis=10.0, arch_d=17.4, ring=26.0, free_r=23.0,
+                        bed=4.5, rot=0.0, eye=(-7.0, 228.9, 1.5)),
+      "resserree": dict(ex_r=10.0, walls=7.5, gap=(232, 308), parvis=6.0, arch_d=8.0, ring=14.0, free_r=12.5,
+                        bed=3.0, rot=18.0, cam_d=8.0)}[CLAIRIERE]
 MS = 217.4                                 # centre du grand massif
-ARCH_S = 200.0                             # arche de roses
+EX_C, EX_R = (0.0, 216.3), CL["ex_r"]      # exèdre
+ROT = math.radians(CL["rot"])              # ouverture de la clairière : nord tourné de ROT vers l'est
+ARCH_X = CL["arch_d"] * math.sin(ROT)
+ARCH_S = MS - CL["arch_d"] * math.cos(ROT) # arche de roses (200 m en v3)
+if "eye" not in CL:                        # caméra du massif : dans l'axe arche-massif, au sud du massif
+    CL["eye"] = (-CL["cam_d"] * math.sin(ROT), MS + CL["cam_d"] * math.cos(ROT), 1.6)
+LATERAUX = True                            # 2026-11-20 (auteur) : jardins latéraux autour des ailes (palace-ref)
 SERRE = (62.0, 78.0, 136.0, 146.0)         # x0, x1, s0, s1
 FOUNT = (-40.0, 114.0)                     # fontaine à vasques
 PORT_S = 40.0                              # portillon (muret est)
@@ -70,7 +87,7 @@ def poly_dist(p, poly):
 # garden-night… : caméra à 7 m à l'ouest de l'axe, au sud du massif, qui vise l'arche), le cadran de la
 # tour de l'horloge doit rester visible, à gauche de l'arche. Le long de cette ligne de vue, la végétation
 # du bosquet est limitée en hauteur (arbres plus petits, ou arbustes) pour rester sous le cadran.
-VISTA_EYE, VISTA_T = (-7.0, 228.9, 1.5), (0.0, 2.0)
+VISTA_EYE, VISTA_T = CL["eye"], (0.0, 2.0)
 VISTA_DEG, VISTA_HALF = 6.9, 9.0          # angle sous le bas du cadran ; demi-largeur de la percée (m)
 
 def vista_max_h(x, s):
@@ -94,20 +111,40 @@ def build_garden(seed=7):
     empty_collection("AUR_20_jardin")
     cyl("pelouse", 0, GCs, 1.0, 0, 0.06, "lawn", segs=96, sx=GA, sy=GB)
     cyl("exedre_sol", EX_C[0], EX_C[1], EX_R, 0, 0.055, "lawn", segs=48)
-    t0, t1 = math.acos(EX_R / GA), -math.asin((GCs - 32) / GB)
+    S_END = 50.0 if LATERAUX else 32.0       # bout nord du muret ovale
+    t0, t1 = math.acos(EX_R / GA), -math.asin((GCs - S_END) / GB)
     east = [(GA * math.cos(t), GCs + GB * math.sin(t)) for t in [t0 + (t1 - t0) * i / 80 for i in range(81)]]
-    wall("muret_ouest", [(-x, s) for x, s in east], 1.2, 0.6, "wall")
-    e_s = [p for p in east if p[1] > PORT_S + 1.8]; e_n = [p for p in east if p[1] < PORT_S - 1.8]
-    wall("muret_est_sud", e_s, 1.2, 0.6, "wall"); wall("muret_est_nord", e_n, 1.2, 0.6, "wall")
-    px = ell_x(PORT_S)
-    for k, ds in enumerate((-1.9, 1.9)):
-        cyl(f"portillon_pilier{k+1}", px, PORT_S + ds, 0.45, 0, 2.0, "wall", segs=8)
-    box("portillon_grille", px - 0.1, px + 0.1, PORT_S - 1.5, PORT_S + 1.5, 0.1, 1.9, "door")
+    if LATERAUX:
+        # Jardins latéraux (2026-11-20, auteur ; d'après palace-ref) : le muret à balustrade se prolonge autour
+        # des ailes jusqu'à l'arrière du palais ; le long de chaque façade extérieure, une allée de gravier courbe,
+        # une bordure de buis, des cyprès et de grands arbres ronds contre le muret. La nuit, Elias descend de sa
+        # fenêtre (aile est) dans le jardin latéral est, suit l'allée latérale puis l'allée de ceinture est.
+        key = [(east[-1][0], S_END), (66.0, 36.0), (68.0, 15.0), (66.0, -6.0), (56.0, -16.0), (42.0, -17.0)]
+        lat = []
+        for (xa, sa), (xb, sb) in zip(key[:-1], key[1:]):
+            lat += [(xa + (xb - xa) * i / 8, sa + (sb - sa) * i / 8) for i in range(8)]
+        lat.append(key[-1])
+        for sg, nm in ((1, "est"), (-1, "ouest")):
+            wall(f"muret_{nm}", [(sg * x, s_) for x, s_ in east + lat[1:]], 1.2, 0.6, "wall")
+            prism(f"pelouse_laterale_{nm}", [(sg * x, s_) for x, s_ in [(37.0, -17.0)] + lat[::-1] + [(37.0, S_END)]][::sg], 0, 0.05, "lawn")
+            ribbon(f"allee_laterale_{nm}", [(sg * x, s_) for x, s_ in [(44, -11), (47, 0), (48.5, 14), (50, 30), (51, 42), (ell_x(S_END, 7), S_END)]], 3.0, "gravel", lift=0.09)
+            wall(f"haie_buis_laterale_{nm}", [(sg * 40.6, -12.0), (sg * 40.6, 33.0)], 0.6, 0.5, "box")
+            wall(f"plate_bande_laterale_{nm}", [(sg * 41.6, -12.0), (sg * 41.6, 33.0)], 0.5, 1.0, "flowers" if sg > 0 else "lavender", z0=0.05)
+    else:
+        wall("muret_ouest", [(-x, s_) for x, s_ in east], 1.2, 0.6, "wall")
+        e_s = [p for p in east if p[1] > PORT_S + 1.8]; e_n = [p for p in east if p[1] < PORT_S - 1.8]
+        wall("muret_est_sud", e_s, 1.2, 0.6, "wall"); wall("muret_est_nord", e_n, 1.2, 0.6, "wall")
+        px = ell_x(PORT_S)
+        for k, ds in enumerate((-1.9, 1.9)):
+            cyl(f"portillon_pilier{k+1}", px, PORT_S + ds, 0.45, 0, 2.0, "wall", segs=8)
+        box("portillon_grille", px - 0.1, px + 0.1, PORT_S - 1.5, PORT_S + 1.5, 0.1, 1.9, "door")
     wall("muret_exedre", [(EX_R * math.cos(a), EX_C[1] + EX_R * math.sin(a)) for a in [math.pi * i / 32 for i in range(33)]], 1.6, 0.7, "wall")
     # Murets courbes de la clairière, au nord du massif, de part et d'autre de l'arche (comme sur garden-day :
     # banc devant le muret ouest, fontaine murale dans le muret est) ; ouverture au nord pour l'allée.
-    for nm, a0, a1 in (("ouest", 195, 245), ("est", 295, 345)):
-        wall(f"muret_clairiere_{nm}", [(14 * math.cos(math.radians(a)), MS + 14 * math.sin(math.radians(a))) for a in [a0 + (a1 - a0) * i / 16 for i in range(17)]], 1.6, 0.7, "wall")
+    R_W = CL["walls"]
+    rr_ = CL["rot"]
+    for nm, a0, a1 in (("ouest", 195 + rr_, CL["gap"][0] + rr_), ("est", CL["gap"][1] + rr_, 345 + rr_)):
+        wall(f"muret_clairiere_{nm}", [(R_W * math.cos(math.radians(a)), MS + R_W * math.sin(math.radians(a))) for a in [a0 + (a1 - a0) * i / 16 for i in range(17)]], 1.6, 0.7, "wall")
     # Allées de gravier (partie à la française)
     box("allee_centrale", -3.5, 3.5, 33.5, 136, 0.06, 0.11, "gravel")
     cyl("rond_point", 0, 141, 8.0, 0.06, 0.11, "gravel", segs=40)
@@ -117,15 +154,15 @@ def build_garden(seed=7):
     # Allées de ceinture
     for sg, nm in ((1, "est"), (-1, "ouest")):
         a, b = GA - 7, GB - 7
-        ts = [math.asin((s - GCs) / b) for s in (38.0, 175.0)]
+        ts = [math.asin((s - GCs) / b) for s in ((50.0 if LATERAUX else 38.0), 175.0)]
         ring = [(sg * a * math.cos(t), GCs + b * math.sin(t)) for t in [ts[0] + (ts[1] - ts[0]) * i / 40 for i in range(41)]]
         tail = [(sg * 55, 186), (sg * 30, 193), (sg * 8, 196.5)]
         ribbon(f"allee_ceinture_{nm}", ring + tail, 3.0, "gravel", lift=0.09)
-    ribbon("allee_portillon", [(px - 1.5, PORT_S), (ell_x(PORT_S + 2, 7) + 0.5, PORT_S + 2.5)], 2.5, "gravel", lift=0.09)
+    if not LATERAUX: px = ell_x(PORT_S); ribbon("allee_portillon", [(px - 1.5, PORT_S), (ell_x(PORT_S + 2, 7) + 0.5, PORT_S + 2.5)], 2.5, "gravel", lift=0.09)
     # Allée sinueuse du bosquet, jusqu'au parvis du massif
-    WIND = [(0, 146), (9, 154), (13, 162), (6, 170), (-7, 177), (-10, 185), (-4, 192), (0, 197), (0, 207)]
+    WIND = [(0, 146), (9, 154), (13, 162), (6, 170), (-7, 177), (-10, 185), (-4, 192), (0, 197), ((CL["arch_d"] + 4) * math.sin(ROT), MS - (CL["arch_d"] + 4) * math.cos(ROT)), ((CL["parvis"] - 0.5) * math.sin(ROT), MS - (CL["parvis"] - 0.5) * math.cos(ROT))]
     ribbon("allee_sinueuse", WIND, 3.6, "gravel", lift=0.09, step=1.5)
-    cyl("parvis_massif", 0, MS, 10, 0.06, 0.10, "gravel", segs=48)
+    cyl("parvis_massif", 0, MS, CL["parvis"], 0.06, 0.10, "gravel", segs=48)
     # Parterres de buis en broderies
     quads = {"NO": (-70, -8, 40, 83), "NE": (8, 70, 40, 83), "SO": (-72, -8, 93, 135), "SE": (8, 72, 93, 135)}
     for nm, (x0, x1, s0, s1) in quads.items():
@@ -154,7 +191,7 @@ def build_garden(seed=7):
         if nm != "SO":
             curves += [clip([(cx + hw * u, cs + hs * 0.55 * math.sin(math.pi * 1.5 * u + ph)) for u in [i / 40 * 2 - 1 for i in range(41)]], 18) for ph in (0.0, math.pi)]
         big = [(cx - hw * 0.5, cs - hs * 0.55), (cx + hw * 0.5, cs + hs * 0.55), (cx - hw * 0.5, cs + hs * 0.55), (cx + hw * 0.5, cs - hs * 0.55)]
-        rnd_p = random.Random(hash(nm) % 1000); kk = 0
+        rnd_p = random.Random(sum(map(ord, nm))); kk = 0   # graine stable (hash() change à chaque session)
         gx = x0 + 7.5
         while gx < x1 - 7:
             gs = s0 + 7.5
@@ -172,9 +209,10 @@ def build_garden(seed=7):
     W["_cur"][0] = bpy.data.collections["AUR_20_jardin"]
     # ------------------------------------------------------------------ AUR_21_massif_et_reperes
     empty_collection("AUR_21_massif_et_reperes")
-    cyl("massif_bordure", 0, MS, 4.8, 0, 0.45, "wall", segs=32); cyl("massif", 0, MS, 4.5, 0.45, 0.75, "massif", segs=32)
+    cyl("massif_bordure", 0, MS, CL["bed"] + 0.3, 0, 0.45, "wall", segs=32); cyl("massif", 0, MS, CL["bed"], 0.45, 0.75, "massif", segs=32)
     cyl("REPERE_Rose_tige", 0, MS, 0.04, 0.75, 1.35, "hedge", segs=8); ball("REPERE_Rose", 0, MS, 1.45, 0.14, "rose")
-    arch("REPERE_arche_roses", 0, ARCH_S, 8.0, 5.2, 1.4, 0.8, "arch")
+    arch("REPERE_arche_roses", ARCH_X, ARCH_S, 8.0, 5.2, 1.4, 0.8, "arch")
+    bpy.data.objects["REPERE_arche_roses"]["p3d_rotz"] = -CL["rot"]   # lu par place_garden_props.py
     for sg, nm in ((-1, "ouest"), (1, "est")):
         arch(f"petite_arche_{nm}", sg * ell_x(150, 7), 150, 4.5, 3.4, 1.0, 0.5, "arch_small")
     x0, x1, s0, s1 = SERRE; sc = (s0 + s1) / 2
@@ -220,7 +258,7 @@ def build_garden(seed=7):
     def free(x, s, clear_path):
         if (x / (GA - 6)) ** 2 + ((s - GCs) / (GB - 6)) ** 2 > 1: return False
         if math.hypot(x - EX_C[0], s - EX_C[1]) < EX_R + 6: return False
-        if math.hypot(x, s - MS) < 23 and s > ARCH_S - 2: return False
+        if math.hypot(x, s - MS) < CL["free_r"] and s > ARCH_S - 2: return False
         if math.hypot(x, s - 141) < 11: return False
         if SERRE[0] - 5 < x < SERRE[1] + 5 and SERRE[2] - 5 < s < SERRE[3] + 5: return False
         return all(poly_dist((x, s), p) > clear_path for p in paths)
@@ -247,14 +285,22 @@ def build_garden(seed=7):
                 k += 1; ball(f"bosquet_arbuste{k:03d}", x + 3, s + 2, 1.0, rnd.uniform(1.4, 2.4), "shrub", sz=0.7)
             if free(x - 2, s + 3, 2.6) and rnd.random() < 0.35:
                 k += 1; cyl(f"bosquet_fleurs{k:03d}", x - 2, s + 3, rnd.uniform(1.5, 2.5), 0.06, 0.6, "flowers" if k % 2 else "lavender", segs=12)
+    if LATERAUX:   # jardins latéraux : grands arbres ronds contre le muret, cyprès le long de l'allée
+        for sg, nm in ((1, "est"), (-1, "ouest")):
+            for i, (x, s_) in enumerate(((59, -7), (61.5, 7), (61.5, 21), (59, 34))):
+                rr = 4.6
+                cyl(f"feuillu_bord_lat_{nm}{i+1}_tronc", sg * x, s_, 0.5, 0, rr * 0.9, "bench", segs=8)
+                ball(f"feuillu_bord_lat_{nm}{i+1}", sg * x, s_, rr * 1.35, rr, "grove", sz=0.9)
+            for i, s_ in enumerate((-3, 11, 25)):
+                cyl(f"cypres_lat_{nm}{i+1}", sg * 54.0, s_, 1.5, 0, 11.0, "cypress", r_top=0.0, segs=12)
     # Couronne d'arbres autour de la clairière (ouverte au nord, sur l'arche)
     # Au nord, de part et d'autre de l'arche, des arbustes seulement : depuis la clairière, la flèche
     # de la tour de l'horloge dépasse des cimes du bosquet, au loin.
     for i in range(16):
-        ang = math.radians(200 + 140 * i / 15)   # moitié nord de la clairière, sauf l'arche
-        off = abs(math.degrees(ang) - 270)
+        ang = math.radians(200 + CL["rot"] + 140 * i / 15)   # moitié nord de la clairière, sauf l'arche
+        off = abs(math.degrees(ang) - 270 - CL["rot"])
         if off < 14: continue
-        x, s = 26 * math.cos(ang), MS + 26 * math.sin(ang); k += 1
+        x, s = CL["ring"] * math.cos(ang), MS + CL["ring"] * math.sin(ang); k += 1
         if off < 40:
             ball(f"clairiere_arbuste{i+1:02d}", x, s, 1.2, rnd.uniform(2.2, 3.0), "shrub", sz=0.8)
             continue

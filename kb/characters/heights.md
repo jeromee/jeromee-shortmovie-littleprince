@@ -34,3 +34,5 @@ toutes, et on les impose de trois façons (voir plus bas).
 [elias.md](elias.md) · [queen-elara.md](queen-elara.md) · [chamberlain.md](chamberlain.md) · [advisers.md](advisers.md) · [footman.md](footman.md)
 
 Toise 3D (2026-11-17) : `kb/characters/sheets/lineup_3d.png`, rendu Blender des sept modèles 3D à leur taille exacte (de gauche à droite : Chambellan, conseiller 1, valet, conseiller 3, Reine, conseiller 2, Elias). Elle fait foi sur `lineup.png` pour les proportions.
+
+> 2026-11-20 : environnement réduit ×0,8 (kb/decisions/0009). La porte du vestibule mesure désormais ≈ 3,6 m sous la clé de l'arc (≈ 3,2 m à la naissance de l'arc), ≈ 2,4 m de large : 2 fois la Reine, 2,6 fois Elias. Les tailles des personnages ne changent pas.

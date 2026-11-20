@@ -4,7 +4,8 @@
 # arbres ronds) par des copies liées des modèles. Les formes provisoires sont masquées, pas supprimées.
 # Usage (world.blend ouvert, APRÈS build_garden_v3.py) :
 #   exec(...) ; import_master("greenhouse") … (un par appel : import et allègement prennent du temps) ;
-#   puis place_all().  Idempotent.
+#   puis place_all(). À relancer seulement juste après build_garden_v3.py : les formes provisoires des
+#   arbres déjà masquées sont ignorées (relancé seul, il efface les arbres 3D).
 # Maîtres : collection AUR_32_persos3d_rig (exclue des plans), masqués, nommés GARDEN_<clé>_master,
 # normalisés : base à z = 0, centrés, mis à leur taille réelle (ou à 1 m de haut pour les végétaux,
 # mis à l'échelle à chaque copie).
@@ -27,7 +28,12 @@ SPECS = {
     "yew":            ("yew_tripo_v1.glb",                  6000,  0, ("z", 1.0)),
     "cypress":        ("cypress_tripo_v1.glb",              6000,  0, ("z", 1.0)),
     "linden":         ("linden_tripo_v1.glb",              25000,  0, ("z", 1.0)),
+    "rose_bed":       ("rose_bed_tripo_v1.glb",            60000,  0, ("xy", 6.6)),   # 2026-11-20 : planche rose-bed-sheet (nb2)
 }
+
+# Écrasement vertical après mise à l'échelle : le massif de la planche est trop haut (rose centrale à 2,15 m) ;
+# ×0,6 → 1,3 m, la Rose à hauteur de poitrine d'Elias (2026-11-20).
+ZSCALE = {"rose_bed": 0.6}
 
 def _store():
     return bpy.data.collections["AUR_32_persos3d_rig"]
@@ -60,6 +66,7 @@ def import_master(key):
     size = {"x": dim.x, "y": dim.y, "z": dim.z, "xy": max(dim.x, dim.y)}[axis]
     k = val / size; c = Vector(((mn.x + mx.x) / 2, (mn.y + mx.y) / 2, mn.z))
     me.transform(Matrix.Scale(k, 4) @ Matrix.Translation(-c)); me.update()
+    if key in ZSCALE: me.transform(Matrix.Diagonal((1, 1, ZSCALE[key], 1))); me.update(); dim.z *= ZSCALE[key]
     for c_ in list(M.users_collection): c_.objects.unlink(M)
     _store().objects.link(M); M.hide_render = True; M.hide_viewport = True
     d = dim * k
@@ -68,6 +75,7 @@ def import_master(key):
 def _inst(key, coll, name, x, s, rotz=0.0, scale=1.0):
     M = bpy.data.objects[f"GARDEN_{key}_master"]
     o = M.copy(); o.data = M.data; o.name = name
+    o.rotation_mode = "XYZ"   # les maîtres glTF sont en quaternion : sans cette ligne, rotz était ignoré (corrigé le 2026-11-20)
     o.location = (x, -s, 0.0); o.rotation_euler = (0, 0, math.radians(rotz)); o.scale = (scale,) * 3
     o.hide_render = False; o.hide_viewport = False; coll.objects.link(o); return o
 
@@ -87,6 +95,10 @@ def place_all():
     x0, x1, y0, y1, _, _ = _bb(O["REPERE_serre"])
     _inst("greenhouse", c21, "P3D_serre", (x0 + x1) / 2, -(y0 + y1) / 2)
     for nm in ("REPERE_serre", "REPERE_serre_toit", "REPERE_serre_porte"): _hide(O[nm])
+    # Grand massif de la Rose (modèle 3D, Ø 6,6 m bordure comprise) : à la place des cylindres provisoires
+    x0, x1, y0, y1, _, _ = _bb(O["massif_bordure"])
+    _inst("rose_bed", c21, "P3D_massif", (x0 + x1) / 2, -(y0 + y1) / 2)
+    for nm in ("massif_bordure", "massif", "REPERE_Rose", "REPERE_Rose_tige"): _hide(O[nm])
     # Fontaine à vasques
     x0, x1, y0, y1, _, _ = _bb(O["fontaine_vasques"])
     _inst("tiered_fountain", c21, "P3D_fontaine_vasques", (x0 + x1) / 2, -(y0 + y1) / 2)
@@ -94,14 +106,18 @@ def place_all():
     # Arche de roses et petites arches (même modèle, réduit)
     for nm, w in (("REPERE_arche_roses", 8.0), ("petite_arche_ouest", 4.5), ("petite_arche_est", 4.5)):
         x0, x1, y0, y1, _, _ = _bb(O[nm])
-        _inst("rose_arch", c21, "P3D_" + nm, (x0 + x1) / 2, -(y0 + y1) / 2, scale=w / 8.0); _hide(O[nm])
+        _inst("rose_arch", c21, "P3D_" + nm, (x0 + x1) / 2, -(y0 + y1) / 2, rotz=O[nm].get("p3d_rotz", 0.0), scale=w / 8.0); _hide(O[nm])
     # Banc (ouest) et fontaine murale (est), adossés au muret de l'exèdre, tournés vers le massif
     # (murets de la clairière de build_garden_v3 : rayon 14 m autour du massif, au nord ; comme sur garden-day,
     # le banc est à gauche et la fontaine murale à droite quand on regarde l'arche depuis le massif)
-    for key, nm, a_deg, r, old in (("bench", "P3D_banc", 220.0, 12.2, "banc"), ("lion_fountain", "P3D_fontaine_murale", 320.0, 13.1, "fontaine_murale")):
-        a = math.radians(a_deg)
+    CLAIRIERE = "resserree"   # même choix que build_garden_v3.py : "v3" (banc à 12,2 m, fontaine à 13,1 m) ou "resserree"
+    RB, RL = {"v3": (12.2, 13.1), "resserree": (5.9, 6.6)}[CLAIRIERE]
+    ROTC = -O["REPERE_arche_roses"].get("p3d_rotz", 0.0)   # ouverture de la clairière tournée vers l'est (degrés)
+    for key, nm, a_deg, r, old in (("bench", "P3D_banc", 220.0, RB, "banc"), ("lion_fountain", "P3D_fontaine_murale", 320.0, RL, "fontaine_murale")):
+        a = math.radians(a_deg + ROTC)
         x, s = r * math.cos(a), MS + r * math.sin(a)
-        face = math.degrees(math.atan2(math.sin(a), -math.cos(a)))   # face avant (+X) tournée vers le massif
+        face = math.degrees(math.atan2(s - MS, -x))   # +X du modèle tourné vers le centre du massif (repère Blender : y = -s)
+        if key == "bench": face += 180.0   # l'assise du banc est du côté -X du modèle (vérifié sur la géométrie, 2026-11-20)
         _inst(key, c21, nm, x, s, rotz=face); _hide(O[old])
     # Ifs en cône, cyprès, arbres ronds : une copie par forme provisoire, à sa taille
     k = 0
