@@ -87,3 +87,6 @@ his green eyes now carry a subtle golden glint: fine gold flecks around the pupi
 
 ## Liens
 [rose.md](rose.md) · [queen-elara.md](queen-elara.md) · [../world/royal-garden.md](../world/royal-garden.md)
+
+## Voix de référence (2026-11-21, auteur)
+Clone ElevenLabs « Elias — Le Prince et la Rose » (Magnific, My Voices) : **voiceId 215420, source `mine`**. Voix d'un garçon français de 10 ans, claire, sincère, curieuse, créée avec Seed Audio 1.0 puis clonée. Usage : changeur de voix sur chaque réplique générée par Seedance. Détail : `production/audio/voix-reference/README.md`.

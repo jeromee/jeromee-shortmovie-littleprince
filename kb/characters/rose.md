@@ -67,3 +67,6 @@ A single large rose with light-yellow, velvety petals, a softly luminous golden 
 
 ## Liens
 [elias.md](elias.md) · [../world/royal-garden.md](../world/royal-garden.md)
+
+## Voix de référence (2026-11-22, auteur)
+Clone ElevenLabs « La Rose — Le Prince et la Rose » (Magnific, My Voices) : **voiceId 215424, source `mine`**. Voix française jeune, claire, douce et tendre, jamais condescendante (l'auteur a écarté les voix qui « font entendre un sentiment de supériorité sur le prince »), créée avec Seed Audio 1.0 puis clonée. Usage : changeur de voix sur chaque réplique générée par Seedance. Détail : `production/audio/voix-reference/README.md`.

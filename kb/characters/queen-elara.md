@@ -91,3 +91,6 @@ Small antique oil portrait in an oval gilded frame: a 10-year-old girl with dark
 
 ## Liens
 [elias.md](elias.md) · [../world/aurelia.md](../world/aurelia.md)
+
+## Voix de référence (2026-11-21, auteur)
+ElevenLabs **Emma Simon, voiceId 485** (catalogue Magnific) : voix de femme posée, chaleureuse, assurée. En réserve : Louise Bernard (219). Usage : changeur de voix sur chaque réplique générée par Seedance. Détail : `production/audio/voix-reference/README.md`.

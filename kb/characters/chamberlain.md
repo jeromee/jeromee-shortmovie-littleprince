@@ -48,3 +48,6 @@ Character reference sheet, stylized 3D animated feature-film look, 16:9, plain w
 [queen-elara.md](queen-elara.md) · [extras.md](extras.md) · [footman.md](footman.md)
 
 Modèle 3D (test, 2026-11-17) : `production/characters3d/chamberlain_tripo_v1_rig.glb` (Tripo v3.1 multivue + rig), vues sources dans `production/characters3d/turnarounds/chamberlain_*.png`.
+
+## Voix de référence (2026-11-22, auteur)
+ElevenLabs **Adrien Moreau, voiceId 230** (catalogue Magnific) : voix d'homme grave et chaleureuse, moins d'autorité que Maxime Giraud (« OK, passable », auteur). Usage : changeur de voix sur chaque réplique générée par Seedance. Détail : `production/audio/voix-reference/README.md`.
