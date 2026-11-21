@@ -1,4 +1,4 @@
-# Les trois conseillers
+# Les conseillers (deux depuis le 2026-11-21)
 
 Statut : décidé (2026-11-15, auteur) · Origine : [claude] shooting script (scène 2) ; fiche créée à la demande de l'auteur (cohérence d'un plan à l'autre)
 
@@ -24,7 +24,7 @@ culotte et bas blancs, un cran moins fastueux que le Chambellan.
 ## Verrou visuel (pour les prompts)
 
 **FR (référence)**
-> Les trois conseillers de la Reine, quinquagénaires sans perruque, chacun un
+> Les deux conseillers de la Reine, quinquagénaires sans perruque, chacun un
 > petit carnet de cuir et un crayon à la main : (1) grand et maigre, favoris
 > gris, lunettes en demi-lune, habit de cour vert bouteille brodé d'argent ;
 > (2) petit et rond, joues roses, dégarni, petite moustache, habit de brocart
@@ -34,7 +34,7 @@ culotte et bas blancs, un cran moins fastueux que le Chambellan.
 
 **EN (à coller)**
 ```text
-the Queen's three royal advisers, men in their fifties without wigs, each holding a small leather notebook and a pencil: (1) tall and lean, grey side-whiskers, half-moon spectacles, bottle-green embroidered court coat with silver embroidery; (2) short and round, rosy cheeks, balding, small moustache, charcoal-black brocade coat and burgundy waistcoat; (3) stiff and upright, thin black hair combed flat, narrow moustache, slate-grey coat with a dark green collar; lace jabots, knee breeches, white stockings, buckled shoes
+the Queen's two royal advisers, men in their fifties without wigs, each holding a small leather notebook and a pencil: (1) tall and lean, grey side-whiskers, half-moon spectacles, bottle-green embroidered court coat with silver embroidery; (3) stiff and upright, thin black hair combed flat, narrow moustache, slate-grey coat with a dark green collar; lace jabots, knee breeches, white stockings, buckled shoes
 ```
 
 ## Fiche de personnage

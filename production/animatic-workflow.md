@@ -61,6 +61,17 @@ articulé seulement si nécessaire (Mixamo, gratuit, import FBX).
 Les mots de la fiche et la caméra Blender doivent rester d'accord : en cas de
 désaccord, Seedance suit la vidéo de référence, pas le texte.
 
+## Mise en scène continue (2026-11-20, kb/decisions/0010)
+Pour les scènes qui gardent le même lieu et la même durée, **avant** de régler les caméras de plan :
+1. Chrono parlé de la scène (répliques à vitesse naturelle) → `production/mise-en-scene/SCxx.md`.
+2. Scène Blender `SCxx_MISE_EN_SCENE` : tous les personnages, figurants compris, joués en continu en temps réel
+   (1 s = 1 s), sans collision ; une caméra par plan, active sur sa fenêtre de temps (marqueurs liés aux caméras).
+3. Scène `SCxx_MES_VERIF` : mêmes objets, vue de dessus orthographique, surimpressions (noms, regards, trajets,
+   champ de la caméra du plan en cours).
+4. Rendu en écran partagé `production/animatic/mise-en-scene/SCxx_verification.mp4` ; l'auteur valide la mise en
+   scène, puis on fait les vignettes et les cartes Seedance, plan par plan, à partir de ces caméras.
+Exemple : `production/blender/build_mise_en_scene_sc02.py`.
+
 ## Sorties
 - `animatic/SCxx-SHyy.mp4` — un MP4 par plan, référence caméra pour CapCut.
 - `animatic/animatic.mp4` — l'animatique complète (rendu de la scène `ANIMATIC`).
