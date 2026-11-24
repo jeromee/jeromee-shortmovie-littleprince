@@ -34,6 +34,9 @@ SPECS = {
 # Écrasement vertical après mise à l'échelle : le massif de la planche est trop haut (rose centrale à 2,15 m) ;
 # ×0,6 → 1,3 m, la Rose à hauteur de poitrine d'Elias (2026-11-20).
 ZSCALE = {"rose_bed": 0.6}
+# 2026-11-22 : le massif ne reste PAS écrasé. clairiere_v2.py repart de ce maillage maître, lui rend sa hauteur (÷ 0,6), retire la
+# fleur centrale (la Rose est désormais un objet à part), creuse le passage de dalles et le rond de mousse, et l'assigne à P3D_massif.
+# Si place_all() est relancé, relancer ensuite clairiere_v2.appliquer() (voir kb/decisions/0012).
 
 def _store():
     return bpy.data.collections["AUR_32_persos3d_rig"]

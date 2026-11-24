@@ -1,0 +1,840 @@
+00:00.062  color_management | Using config from OCIO: "C:\Program Files\Blender Foundation\Blender 5.3\5.3\datafiles\colormanagement\config.ocio"
+00:03.406  blend            | Read blend: "T:\Temp\Jerome\_tmp_render_mes_sc03_sh09.blend"
+00:07.625  render           | Rendering animation (frames 1521..1727)
+00:07.625  render           | Rendering frame 1521
+00:07.797  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:07.797  render           | Engine: EEVEE
+00:10.984  render           | Fra: 1521 | Rendering 1 / 16 samples
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:33:43)
+Scene switch for render: 'SC03_MISE_EN_SCENE' in file: 'T:\Temp\Jerome\_tmp_render_mes_sc03_sh09.blend'
+00:11.187  render           | Fra: 1521 | Rendering 16 / 16 samples
+00:11.469  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1521.png'
+00:11.469  render           | Time: 00:03.83 (Saving: 00:00.25)
+00:11.469  render           | Rendering frame 1523
+00:11.469  render           | Rendering frame 1523
+00:11.469  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:11.469  render           | Engine: EEVEE
+00:11.578  render           | Fra: 1523 | Rendering 1 / 16 samples
+00:11.687  render           | Fra: 1523 | Rendering 16 / 16 samples
+00:11.750  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1523.png'
+00:11.750  render           | Time: 00:00.29 (Saving: 00:00.06)
+00:11.750  render           | Rendering frame 1525
+00:11.750  render           | Rendering frame 1525
+00:11.750  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:11.766  render           | Engine: EEVEE
+00:11.828  render           | Fra: 1525 | Rendering 1 / 16 samples
+00:12.000  render           | Fra: 1525 | Rendering 16 / 16 samples
+00:12.078  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1525.png'
+00:12.078  render           | Time: 00:00.31 (Saving: 00:00.06)
+00:12.078  render           | Rendering frame 1527
+00:12.078  render           | Rendering frame 1527
+00:12.078  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:12.078  render           | Engine: EEVEE
+00:12.156  render           | Fra: 1527 | Rendering 1 / 16 samples
+00:12.266  render           | Fra: 1527 | Rendering 16 / 16 samples
+00:12.328  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1527.png'
+00:12.328  render           | Time: 00:00.25 (Saving: 00:00.06)
+00:12.328  render           | Rendering frame 1529
+00:12.328  render           | Rendering frame 1529
+00:12.328  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:12.328  render           | Engine: EEVEE
+00:12.406  render           | Fra: 1529 | Rendering 1 / 16 samples
+00:12.500  render           | Fra: 1529 | Rendering 16 / 16 samples
+00:12.578  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1529.png'
+00:12.578  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:12.578  render           | Rendering frame 1531
+00:12.578  render           | Rendering frame 1531
+00:12.578  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:12.578  render           | Engine: EEVEE
+00:12.656  render           | Fra: 1531 | Rendering 1 / 16 samples
+00:12.750  render           | Fra: 1531 | Rendering 16 / 16 samples
+00:12.828  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1531.png'
+00:12.828  render           | Time: 00:00.24 (Saving: 00:00.07)
+00:12.828  render           | Rendering frame 1533
+00:12.828  render           | Rendering frame 1533
+00:12.828  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:12.828  render           | Engine: EEVEE
+00:12.891  render           | Fra: 1533 | Rendering 1 / 16 samples
+00:12.984  render           | Fra: 1533 | Rendering 16 / 16 samples
+00:13.047  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1533.png'
+00:13.047  render           | Time: 00:00.22 (Saving: 00:00.06)
+00:13.047  render           | Rendering frame 1535
+00:13.047  render           | Rendering frame 1535
+00:13.047  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:13.047  render           | Engine: EEVEE
+00:13.125  render           | Fra: 1535 | Rendering 1 / 16 samples
+00:13.219  render           | Fra: 1535 | Rendering 16 / 16 samples
+00:13.281  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1535.png'
+00:13.281  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:13.281  render           | Rendering frame 1537
+00:13.281  render           | Rendering frame 1537
+00:13.281  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:13.281  render           | Engine: EEVEE
+00:13.344  render           | Fra: 1537 | Rendering 1 / 16 samples
+00:13.437  render           | Fra: 1537 | Rendering 16 / 16 samples
+00:13.516  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1537.png'
+00:13.516  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:13.516  render           | Rendering frame 1539
+00:13.516  render           | Rendering frame 1539
+00:13.516  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:13.516  render           | Engine: EEVEE
+00:13.578  render           | Fra: 1539 | Rendering 1 / 16 samples
+00:13.687  render           | Fra: 1539 | Rendering 16 / 16 samples
+00:13.750  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1539.png'
+00:13.750  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:13.750  render           | Rendering frame 1541
+00:13.750  render           | Rendering frame 1541
+00:13.750  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:13.750  render           | Engine: EEVEE
+00:13.812  render           | Fra: 1541 | Rendering 1 / 16 samples
+00:13.906  render           | Fra: 1541 | Rendering 16 / 16 samples
+00:13.984  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1541.png'
+00:13.984  render           | Time: 00:00.22 (Saving: 00:00.06)
+00:13.984  render           | Rendering frame 1543
+00:13.984  render           | Rendering frame 1543
+00:13.984  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:13.984  render           | Engine: EEVEE
+00:14.047  render           | Fra: 1543 | Rendering 1 / 16 samples
+00:14.141  render           | Fra: 1543 | Rendering 16 / 16 samples
+00:14.203  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1543.png'
+00:14.203  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:14.203  render           | Rendering frame 1545
+00:14.203  render           | Rendering frame 1545
+00:14.219  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:14.219  render           | Engine: EEVEE
+00:14.281  render           | Fra: 1545 | Rendering 1 / 16 samples
+00:14.375  render           | Fra: 1545 | Rendering 16 / 16 samples
+00:14.453  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1545.png'
+00:14.453  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:14.453  render           | Rendering frame 1547
+00:14.453  render           | Rendering frame 1547
+00:14.453  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:14.453  render           | Engine: EEVEE
+00:14.531  render           | Fra: 1547 | Rendering 1 / 16 samples
+00:14.625  render           | Fra: 1547 | Rendering 16 / 16 samples
+00:14.687  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1547.png'
+00:14.687  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:14.687  render           | Rendering frame 1549
+00:14.687  render           | Rendering frame 1549
+00:14.703  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:14.703  render           | Engine: EEVEE
+00:14.766  render           | Fra: 1549 | Rendering 1 / 16 samples
+00:14.875  render           | Fra: 1549 | Rendering 16 / 16 samples
+00:14.937  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1549.png'
+00:14.937  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:14.937  render           | Rendering frame 1551
+00:14.937  render           | Rendering frame 1551
+00:14.937  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:14.937  render           | Engine: EEVEE
+00:15.016  render           | Fra: 1551 | Rendering 1 / 16 samples
+00:15.125  render           | Fra: 1551 | Rendering 16 / 16 samples
+00:15.187  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1551.png'
+00:15.187  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:15.187  render           | Rendering frame 1553
+00:15.187  render           | Rendering frame 1553
+00:15.187  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:15.187  render           | Engine: EEVEE
+00:15.250  render           | Fra: 1553 | Rendering 1 / 16 samples
+00:15.359  render           | Fra: 1553 | Rendering 16 / 16 samples
+00:15.422  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1553.png'
+00:15.422  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:15.422  render           | Rendering frame 1555
+00:15.422  render           | Rendering frame 1555
+00:15.422  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:15.422  render           | Engine: EEVEE
+00:15.500  render           | Fra: 1555 | Rendering 1 / 16 samples
+00:15.594  render           | Fra: 1555 | Rendering 16 / 16 samples
+00:15.656  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1555.png'
+00:15.656  render           | Time: 00:00.22 (Saving: 00:00.06)
+00:15.656  render           | Rendering frame 1557
+00:15.656  render           | Rendering frame 1557
+00:15.656  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:15.656  render           | Engine: EEVEE
+00:15.719  render           | Fra: 1557 | Rendering 1 / 16 samples
+00:15.828  render           | Fra: 1557 | Rendering 16 / 16 samples
+00:15.891  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1557.png'
+00:15.891  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:15.891  render           | Rendering frame 1559
+00:15.891  render           | Rendering frame 1559
+00:15.891  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:15.891  render           | Engine: EEVEE
+00:15.969  render           | Fra: 1559 | Rendering 1 / 16 samples
+00:16.062  render           | Fra: 1559 | Rendering 16 / 16 samples
+00:16.125  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1559.png'
+00:16.125  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:16.125  render           | Rendering frame 1561
+00:16.125  render           | Rendering frame 1561
+00:16.125  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:16.125  render           | Engine: EEVEE
+00:16.187  render           | Fra: 1561 | Rendering 1 / 16 samples
+00:16.281  render           | Fra: 1561 | Rendering 16 / 16 samples
+00:16.359  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1561.png'
+00:16.359  render           | Time: 00:00.22 (Saving: 00:00.06)
+00:16.359  render           | Rendering frame 1563
+00:16.359  render           | Rendering frame 1563
+00:16.359  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:16.359  render           | Engine: EEVEE
+00:16.422  render           | Fra: 1563 | Rendering 1 / 16 samples
+00:16.516  render           | Fra: 1563 | Rendering 16 / 16 samples
+00:16.594  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1563.png'
+00:16.594  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:16.594  render           | Rendering frame 1565
+00:16.594  render           | Rendering frame 1565
+00:16.594  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:16.594  render           | Engine: EEVEE
+00:16.656  render           | Fra: 1565 | Rendering 1 / 16 samples
+00:16.766  render           | Fra: 1565 | Rendering 16 / 16 samples
+00:16.828  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1565.png'
+00:16.828  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:16.828  render           | Rendering frame 1567
+00:16.828  render           | Rendering frame 1567
+00:16.828  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:16.828  render           | Engine: EEVEE
+00:16.906  render           | Fra: 1567 | Rendering 1 / 16 samples
+00:17.000  render           | Fra: 1567 | Rendering 16 / 16 samples
+00:17.062  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1567.png'
+00:17.062  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:17.062  render           | Rendering frame 1569
+00:17.062  render           | Rendering frame 1569
+00:17.078  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:17.078  render           | Engine: EEVEE
+00:17.125  render           | Fra: 1569 | Rendering 1 / 16 samples
+00:17.234  render           | Fra: 1569 | Rendering 16 / 16 samples
+00:17.297  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1569.png'
+00:17.297  render           | Time: 00:00.22 (Saving: 00:00.06)
+00:17.297  render           | Rendering frame 1571
+00:17.297  render           | Rendering frame 1571
+00:17.297  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:17.297  render           | Engine: EEVEE
+00:17.375  render           | Fra: 1571 | Rendering 1 / 16 samples
+00:17.469  render           | Fra: 1571 | Rendering 16 / 16 samples
+00:17.531  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1571.png'
+00:17.531  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:17.531  render           | Rendering frame 1573
+00:17.531  render           | Rendering frame 1573
+00:17.531  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:17.531  render           | Engine: EEVEE
+00:17.594  render           | Fra: 1573 | Rendering 1 / 16 samples
+00:17.703  render           | Fra: 1573 | Rendering 16 / 16 samples
+00:17.766  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1573.png'
+00:17.766  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:17.766  render           | Rendering frame 1575
+00:17.766  render           | Rendering frame 1575
+00:17.766  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:17.766  render           | Engine: EEVEE
+00:17.844  render           | Fra: 1575 | Rendering 1 / 16 samples
+00:17.937  render           | Fra: 1575 | Rendering 16 / 16 samples
+00:18.016  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1575.png'
+00:18.016  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:18.016  render           | Rendering frame 1577
+00:18.016  render           | Rendering frame 1577
+00:18.016  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:18.016  render           | Engine: EEVEE
+00:18.078  render           | Fra: 1577 | Rendering 1 / 16 samples
+00:18.172  render           | Fra: 1577 | Rendering 16 / 16 samples
+00:18.234  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1577.png'
+00:18.234  render           | Time: 00:00.22 (Saving: 00:00.06)
+00:18.234  render           | Rendering frame 1579
+00:18.234  render           | Rendering frame 1579
+00:18.234  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:18.234  render           | Engine: EEVEE
+00:18.312  render           | Fra: 1579 | Rendering 1 / 16 samples
+00:18.406  render           | Fra: 1579 | Rendering 16 / 16 samples
+00:18.469  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1579.png'
+00:18.469  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:18.469  render           | Rendering frame 1581
+00:18.469  render           | Rendering frame 1581
+00:18.469  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:18.469  render           | Engine: EEVEE
+00:18.547  render           | Fra: 1581 | Rendering 1 / 16 samples
+00:18.641  render           | Fra: 1581 | Rendering 16 / 16 samples
+00:18.703  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1581.png'
+00:18.703  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:18.703  render           | Rendering frame 1583
+00:18.703  render           | Rendering frame 1583
+00:18.703  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:18.703  render           | Engine: EEVEE
+00:18.781  render           | Fra: 1583 | Rendering 1 / 16 samples
+00:18.875  render           | Fra: 1583 | Rendering 16 / 16 samples
+00:18.953  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1583.png'
+00:18.953  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:18.953  render           | Rendering frame 1585
+00:18.953  render           | Rendering frame 1585
+00:18.953  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:18.953  render           | Engine: EEVEE
+00:19.016  render           | Fra: 1585 | Rendering 1 / 16 samples
+00:19.125  render           | Fra: 1585 | Rendering 16 / 16 samples
+00:19.203  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1585.png'
+00:19.203  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:19.203  render           | Rendering frame 1587
+00:19.203  render           | Rendering frame 1587
+00:19.203  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:19.203  render           | Engine: EEVEE
+00:19.266  render           | Fra: 1587 | Rendering 1 / 16 samples
+00:19.359  render           | Fra: 1587 | Rendering 16 / 16 samples
+00:19.437  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1587.png'
+00:19.437  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:19.437  render           | Rendering frame 1589
+00:19.437  render           | Rendering frame 1589
+00:19.437  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:19.437  render           | Engine: EEVEE
+00:19.500  render           | Fra: 1589 | Rendering 1 / 16 samples
+00:19.594  render           | Fra: 1589 | Rendering 16 / 16 samples
+00:19.656  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1589.png'
+00:19.656  render           | Time: 00:00.22 (Saving: 00:00.06)
+00:19.656  render           | Rendering frame 1591
+00:19.656  render           | Rendering frame 1591
+00:19.656  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:19.656  render           | Engine: EEVEE
+00:19.734  render           | Fra: 1591 | Rendering 1 / 16 samples
+00:19.828  render           | Fra: 1591 | Rendering 16 / 16 samples
+00:19.891  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1591.png'
+00:19.891  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:19.891  render           | Rendering frame 1593
+00:19.891  render           | Rendering frame 1593
+00:19.891  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:19.891  render           | Engine: EEVEE
+00:19.969  render           | Fra: 1593 | Rendering 1 / 16 samples
+00:20.047  render           | Fra: 1593 | Rendering 16 / 16 samples
+00:20.125  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1593.png'
+00:20.125  render           | Time: 00:00.22 (Saving: 00:00.06)
+00:20.125  render           | Rendering frame 1595
+00:20.125  render           | Rendering frame 1595
+00:20.125  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:20.125  render           | Engine: EEVEE
+00:20.187  render           | Fra: 1595 | Rendering 1 / 16 samples
+00:20.297  render           | Fra: 1595 | Rendering 16 / 16 samples
+00:20.359  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1595.png'
+00:20.359  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:20.359  render           | Rendering frame 1597
+00:20.359  render           | Rendering frame 1597
+00:20.359  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:20.359  render           | Engine: EEVEE
+00:20.422  render           | Fra: 1597 | Rendering 1 / 16 samples
+00:20.516  render           | Fra: 1597 | Rendering 16 / 16 samples
+00:20.594  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1597.png'
+00:20.594  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:20.594  render           | Rendering frame 1599
+00:20.594  render           | Rendering frame 1599
+00:20.594  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:20.594  render           | Engine: EEVEE
+00:20.656  render           | Fra: 1599 | Rendering 1 / 16 samples
+00:20.859  render           | Fra: 1599 | Rendering 16 / 16 samples
+00:20.922  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1599.png'
+00:20.922  render           | Time: 00:00.33 (Saving: 00:00.06)
+00:20.922  render           | Rendering frame 1601
+00:20.922  render           | Rendering frame 1601
+00:20.922  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:20.922  render           | Engine: EEVEE
+00:20.984  render           | Fra: 1601 | Rendering 1 / 16 samples
+00:21.094  render           | Fra: 1601 | Rendering 16 / 16 samples
+00:21.156  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1601.png'
+00:21.156  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:21.156  render           | Rendering frame 1603
+00:21.156  render           | Rendering frame 1603
+00:21.156  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:21.156  render           | Engine: EEVEE
+00:21.234  render           | Fra: 1603 | Rendering 1 / 16 samples
+00:21.328  render           | Fra: 1603 | Rendering 16 / 16 samples
+00:21.406  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1603.png'
+00:21.406  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:21.406  render           | Rendering frame 1605
+00:21.406  render           | Rendering frame 1605
+00:21.406  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:21.406  render           | Engine: EEVEE
+00:21.469  render           | Fra: 1605 | Rendering 1 / 16 samples
+00:21.578  render           | Fra: 1605 | Rendering 16 / 16 samples
+00:21.641  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1605.png'
+00:21.641  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:21.641  render           | Rendering frame 1607
+00:21.641  render           | Rendering frame 1607
+00:21.641  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:21.641  render           | Engine: EEVEE
+00:21.719  render           | Fra: 1607 | Rendering 1 / 16 samples
+00:21.812  render           | Fra: 1607 | Rendering 16 / 16 samples
+00:21.891  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1607.png'
+00:21.891  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:21.891  render           | Rendering frame 1609
+00:21.891  render           | Rendering frame 1609
+00:21.891  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:21.891  render           | Engine: EEVEE
+00:21.953  render           | Fra: 1609 | Rendering 1 / 16 samples
+00:22.047  render           | Fra: 1609 | Rendering 16 / 16 samples
+00:22.109  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1609.png'
+00:22.109  render           | Time: 00:00.22 (Saving: 00:00.06)
+00:22.109  render           | Rendering frame 1611
+00:22.109  render           | Rendering frame 1611
+00:22.109  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:22.109  render           | Engine: EEVEE
+00:22.187  render           | Fra: 1611 | Rendering 1 / 16 samples
+00:22.281  render           | Fra: 1611 | Rendering 16 / 16 samples
+00:22.344  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1611.png'
+00:22.344  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:22.344  render           | Rendering frame 1613
+00:22.344  render           | Rendering frame 1613
+00:22.359  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:22.359  render           | Engine: EEVEE
+00:22.422  render           | Fra: 1613 | Rendering 1 / 16 samples
+00:22.547  render           | Fra: 1613 | Rendering 16 / 16 samples
+00:22.609  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1613.png'
+00:22.609  render           | Time: 00:00.25 (Saving: 00:00.06)
+00:22.609  render           | Rendering frame 1615
+00:22.609  render           | Rendering frame 1615
+00:22.609  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:22.609  render           | Engine: EEVEE
+00:22.687  render           | Fra: 1615 | Rendering 1 / 16 samples
+00:22.797  render           | Fra: 1615 | Rendering 16 / 16 samples
+00:22.859  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1615.png'
+00:22.859  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:22.859  render           | Rendering frame 1617
+00:22.859  render           | Rendering frame 1617
+00:22.859  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:22.859  render           | Engine: EEVEE
+00:22.937  render           | Fra: 1617 | Rendering 1 / 16 samples
+00:23.062  render           | Fra: 1617 | Rendering 16 / 16 samples
+00:23.125  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1617.png'
+00:23.125  render           | Time: 00:00.26 (Saving: 00:00.06)
+00:23.125  render           | Rendering frame 1619
+00:23.125  render           | Rendering frame 1619
+00:23.125  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:23.125  render           | Engine: EEVEE
+00:23.203  render           | Fra: 1619 | Rendering 1 / 16 samples
+00:23.297  render           | Fra: 1619 | Rendering 16 / 16 samples
+00:23.375  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1619.png'
+00:23.375  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:23.375  render           | Rendering frame 1621
+00:23.375  render           | Rendering frame 1621
+00:23.375  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:23.375  render           | Engine: EEVEE
+00:23.437  render           | Fra: 1621 | Rendering 1 / 16 samples
+00:23.531  render           | Fra: 1621 | Rendering 16 / 16 samples
+00:23.609  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1621.png'
+00:23.609  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:23.609  render           | Rendering frame 1623
+00:23.609  render           | Rendering frame 1623
+00:23.609  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:23.609  render           | Engine: EEVEE
+00:23.687  render           | Fra: 1623 | Rendering 1 / 16 samples
+00:23.781  render           | Fra: 1623 | Rendering 16 / 16 samples
+00:23.844  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1623.png'
+00:23.844  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:23.844  render           | Rendering frame 1625
+00:23.859  render           | Rendering frame 1625
+00:23.859  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:23.859  render           | Engine: EEVEE
+00:23.922  render           | Fra: 1625 | Rendering 1 / 16 samples
+00:24.016  render           | Fra: 1625 | Rendering 16 / 16 samples
+00:24.094  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1625.png'
+00:24.094  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:24.094  render           | Rendering frame 1627
+00:24.094  render           | Rendering frame 1627
+00:24.094  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:24.094  render           | Engine: EEVEE
+00:24.172  render           | Fra: 1627 | Rendering 1 / 16 samples
+00:24.266  render           | Fra: 1627 | Rendering 16 / 16 samples
+00:24.328  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1627.png'
+00:24.328  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:24.328  render           | Rendering frame 1629
+00:24.328  render           | Rendering frame 1629
+00:24.344  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:24.344  render           | Engine: EEVEE
+00:24.406  render           | Fra: 1629 | Rendering 1 / 16 samples
+00:24.500  render           | Fra: 1629 | Rendering 16 / 16 samples
+00:24.562  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1629.png'
+00:24.562  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:24.562  render           | Rendering frame 1631
+00:24.562  render           | Rendering frame 1631
+00:24.578  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:24.578  render           | Engine: EEVEE
+00:24.656  render           | Fra: 1631 | Rendering 1 / 16 samples
+00:24.750  render           | Fra: 1631 | Rendering 16 / 16 samples
+00:24.812  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1631.png'
+00:24.812  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:24.812  render           | Rendering frame 1633
+00:24.812  render           | Rendering frame 1633
+00:24.812  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:24.812  render           | Engine: EEVEE
+00:24.875  render           | Fra: 1633 | Rendering 1 / 16 samples
+00:24.984  render           | Fra: 1633 | Rendering 16 / 16 samples
+00:25.047  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1633.png'
+00:25.047  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:25.047  render           | Rendering frame 1635
+00:25.047  render           | Rendering frame 1635
+00:25.047  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:25.047  render           | Engine: EEVEE
+00:25.125  render           | Fra: 1635 | Rendering 1 / 16 samples
+00:25.219  render           | Fra: 1635 | Rendering 16 / 16 samples
+00:25.297  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1635.png'
+00:25.297  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:25.297  render           | Rendering frame 1637
+00:25.297  render           | Rendering frame 1637
+00:25.297  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:25.297  render           | Engine: EEVEE
+00:25.359  render           | Fra: 1637 | Rendering 1 / 16 samples
+00:25.453  render           | Fra: 1637 | Rendering 16 / 16 samples
+00:25.531  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1637.png'
+00:25.531  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:25.531  render           | Rendering frame 1639
+00:25.531  render           | Rendering frame 1639
+00:25.531  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:25.531  render           | Engine: EEVEE
+00:25.594  render           | Fra: 1639 | Rendering 1 / 16 samples
+00:25.703  render           | Fra: 1639 | Rendering 16 / 16 samples
+00:25.766  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1639.png'
+00:25.766  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:25.766  render           | Rendering frame 1641
+00:25.766  render           | Rendering frame 1641
+00:25.766  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:25.766  render           | Engine: EEVEE
+00:25.828  render           | Fra: 1641 | Rendering 1 / 16 samples
+00:25.953  render           | Fra: 1641 | Rendering 16 / 16 samples
+00:26.031  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1641.png'
+00:26.031  render           | Time: 00:00.25 (Saving: 00:00.06)
+00:26.031  render           | Rendering frame 1643
+00:26.031  render           | Rendering frame 1643
+00:26.031  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:26.031  render           | Engine: EEVEE
+00:26.109  render           | Fra: 1643 | Rendering 1 / 16 samples
+00:26.234  render           | Fra: 1643 | Rendering 16 / 16 samples
+00:26.312  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1643.png'
+00:26.312  render           | Time: 00:00.28 (Saving: 00:00.06)
+00:26.312  render           | Rendering frame 1645
+00:26.312  render           | Rendering frame 1645
+00:26.312  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:26.312  render           | Engine: EEVEE
+00:26.375  render           | Fra: 1645 | Rendering 1 / 16 samples
+00:26.500  render           | Fra: 1645 | Rendering 16 / 16 samples
+00:26.562  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1645.png'
+00:26.562  render           | Time: 00:00.25 (Saving: 00:00.06)
+00:26.562  render           | Rendering frame 1647
+00:26.562  render           | Rendering frame 1647
+00:26.562  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:26.562  render           | Engine: EEVEE
+00:26.641  render           | Fra: 1647 | Rendering 1 / 16 samples
+00:26.734  render           | Fra: 1647 | Rendering 16 / 16 samples
+00:26.812  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1647.png'
+00:26.812  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:26.812  render           | Rendering frame 1649
+00:26.812  render           | Rendering frame 1649
+00:26.812  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:26.812  render           | Engine: EEVEE
+00:26.875  render           | Fra: 1649 | Rendering 1 / 16 samples
+00:26.984  render           | Fra: 1649 | Rendering 16 / 16 samples
+00:27.062  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1649.png'
+00:27.062  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:27.062  render           | Rendering frame 1651
+00:27.062  render           | Rendering frame 1651
+00:27.062  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:27.062  render           | Engine: EEVEE
+00:27.141  render           | Fra: 1651 | Rendering 1 / 16 samples
+00:27.234  render           | Fra: 1651 | Rendering 16 / 16 samples
+00:27.312  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1651.png'
+00:27.312  render           | Time: 00:00.25 (Saving: 00:00.06)
+00:27.312  render           | Rendering frame 1653
+00:27.312  render           | Rendering frame 1653
+00:27.312  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:27.312  render           | Engine: EEVEE
+00:27.391  render           | Fra: 1653 | Rendering 1 / 16 samples
+00:27.484  render           | Fra: 1653 | Rendering 16 / 16 samples
+00:27.562  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1653.png'
+00:27.562  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:27.562  render           | Rendering frame 1655
+00:27.562  render           | Rendering frame 1655
+00:27.562  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:27.562  render           | Engine: EEVEE
+00:27.641  render           | Fra: 1655 | Rendering 1 / 16 samples
+00:27.734  render           | Fra: 1655 | Rendering 16 / 16 samples
+00:27.812  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1655.png'
+00:27.812  render           | Time: 00:00.25 (Saving: 00:00.06)
+00:27.812  render           | Rendering frame 1657
+00:27.812  render           | Rendering frame 1657
+00:27.812  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:27.812  render           | Engine: EEVEE
+00:27.891  render           | Fra: 1657 | Rendering 1 / 16 samples
+00:27.984  render           | Fra: 1657 | Rendering 16 / 16 samples
+00:28.062  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1657.png'
+00:28.062  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:28.062  render           | Rendering frame 1659
+00:28.062  render           | Rendering frame 1659
+00:28.062  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:28.062  render           | Engine: EEVEE
+00:28.141  render           | Fra: 1659 | Rendering 1 / 16 samples
+00:28.266  render           | Fra: 1659 | Rendering 16 / 16 samples
+00:28.344  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1659.png'
+00:28.344  render           | Time: 00:00.27 (Saving: 00:00.06)
+00:28.344  render           | Rendering frame 1661
+00:28.344  render           | Rendering frame 1661
+00:28.344  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:28.344  render           | Engine: EEVEE
+00:28.406  render           | Fra: 1661 | Rendering 1 / 16 samples
+00:28.531  render           | Fra: 1661 | Rendering 16 / 16 samples
+00:28.594  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1661.png'
+00:28.594  render           | Time: 00:00.25 (Saving: 00:00.06)
+00:28.594  render           | Rendering frame 1663
+00:28.594  render           | Rendering frame 1663
+00:28.594  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:28.594  render           | Engine: EEVEE
+00:28.672  render           | Fra: 1663 | Rendering 1 / 16 samples
+00:28.781  render           | Fra: 1663 | Rendering 16 / 16 samples
+00:28.859  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1663.png'
+00:28.859  render           | Time: 00:00.25 (Saving: 00:00.06)
+00:28.859  render           | Rendering frame 1665
+00:28.859  render           | Rendering frame 1665
+00:28.859  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:28.859  render           | Engine: EEVEE
+00:28.922  render           | Fra: 1665 | Rendering 1 / 16 samples
+00:29.016  render           | Fra: 1665 | Rendering 16 / 16 samples
+00:29.094  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1665.png'
+00:29.094  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:29.094  render           | Rendering frame 1667
+00:29.094  render           | Rendering frame 1667
+00:29.094  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:29.094  render           | Engine: EEVEE
+00:29.172  render           | Fra: 1667 | Rendering 1 / 16 samples
+00:29.266  render           | Fra: 1667 | Rendering 16 / 16 samples
+00:29.344  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1667.png'
+00:29.344  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:29.344  render           | Rendering frame 1669
+00:29.344  render           | Rendering frame 1669
+00:29.344  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:29.344  render           | Engine: EEVEE
+00:29.406  render           | Fra: 1669 | Rendering 1 / 16 samples
+00:29.516  render           | Fra: 1669 | Rendering 16 / 16 samples
+00:29.578  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1669.png'
+00:29.578  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:29.578  render           | Rendering frame 1671
+00:29.578  render           | Rendering frame 1671
+00:29.578  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:29.578  render           | Engine: EEVEE
+00:29.656  render           | Fra: 1671 | Rendering 1 / 16 samples
+00:29.766  render           | Fra: 1671 | Rendering 16 / 16 samples
+00:29.844  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1671.png'
+00:29.844  render           | Time: 00:00.25 (Saving: 00:00.06)
+00:29.844  render           | Rendering frame 1673
+00:29.844  render           | Rendering frame 1673
+00:29.844  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:29.844  render           | Engine: EEVEE
+00:29.906  render           | Fra: 1673 | Rendering 1 / 16 samples
+00:30.016  render           | Fra: 1673 | Rendering 16 / 16 samples
+00:30.094  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1673.png'
+00:30.094  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:30.094  render           | Rendering frame 1675
+00:30.094  render           | Rendering frame 1675
+00:30.094  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:30.094  render           | Engine: EEVEE
+00:30.156  render           | Fra: 1675 | Rendering 1 / 16 samples
+00:30.266  render           | Fra: 1675 | Rendering 16 / 16 samples
+00:30.344  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1675.png'
+00:30.344  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:30.344  render           | Rendering frame 1677
+00:30.344  render           | Rendering frame 1677
+00:30.344  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:30.344  render           | Engine: EEVEE
+00:30.406  render           | Fra: 1677 | Rendering 1 / 16 samples
+00:30.516  render           | Fra: 1677 | Rendering 16 / 16 samples
+00:30.578  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1677.png'
+00:30.578  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:30.578  render           | Rendering frame 1679
+00:30.578  render           | Rendering frame 1679
+00:30.578  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:30.578  render           | Engine: EEVEE
+00:30.656  render           | Fra: 1679 | Rendering 1 / 16 samples
+00:30.750  render           | Fra: 1679 | Rendering 16 / 16 samples
+00:30.828  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1679.png'
+00:30.828  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:30.828  render           | Rendering frame 1681
+00:30.828  render           | Rendering frame 1681
+00:30.828  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:30.828  render           | Engine: EEVEE
+00:30.891  render           | Fra: 1681 | Rendering 1 / 16 samples
+00:30.984  render           | Fra: 1681 | Rendering 16 / 16 samples
+00:31.062  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1681.png'
+00:31.078  render           | Time: 00:00.24 (Saving: 00:00.07)
+00:31.078  render           | Rendering frame 1683
+00:31.078  render           | Rendering frame 1683
+00:31.078  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:31.078  render           | Engine: EEVEE
+00:31.141  render           | Fra: 1683 | Rendering 1 / 16 samples
+00:31.250  render           | Fra: 1683 | Rendering 16 / 16 samples
+00:31.312  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1683.png'
+00:31.312  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:31.312  render           | Rendering frame 1685
+00:31.312  render           | Rendering frame 1685
+00:31.312  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:31.312  render           | Engine: EEVEE
+00:31.391  render           | Fra: 1685 | Rendering 1 / 16 samples
+00:31.484  render           | Fra: 1685 | Rendering 16 / 16 samples
+00:31.547  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1685.png'
+00:31.547  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:31.547  render           | Rendering frame 1687
+00:31.562  render           | Rendering frame 1687
+00:31.562  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:31.562  render           | Engine: EEVEE
+00:31.625  render           | Fra: 1687 | Rendering 1 / 16 samples
+00:31.719  render           | Fra: 1687 | Rendering 16 / 16 samples
+00:31.797  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1687.png'
+00:31.797  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:31.797  render           | Rendering frame 1689
+00:31.797  render           | Rendering frame 1689
+00:31.797  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:31.797  render           | Engine: EEVEE
+00:31.859  render           | Fra: 1689 | Rendering 1 / 16 samples
+00:31.953  render           | Fra: 1689 | Rendering 16 / 16 samples
+00:32.031  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1689.png'
+00:32.031  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:32.031  render           | Rendering frame 1691
+00:32.031  render           | Rendering frame 1691
+00:32.031  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:32.031  render           | Engine: EEVEE
+00:32.109  render           | Fra: 1691 | Rendering 1 / 16 samples
+00:32.203  render           | Fra: 1691 | Rendering 16 / 16 samples
+00:32.266  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1691.png'
+00:32.266  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:32.266  render           | Rendering frame 1693
+00:32.266  render           | Rendering frame 1693
+00:32.266  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:32.266  render           | Engine: EEVEE
+00:32.344  render           | Fra: 1693 | Rendering 1 / 16 samples
+00:32.437  render           | Fra: 1693 | Rendering 16 / 16 samples
+00:32.516  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1693.png'
+00:32.516  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:32.516  render           | Rendering frame 1695
+00:32.516  render           | Rendering frame 1695
+00:32.516  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:32.516  render           | Engine: EEVEE
+00:32.594  render           | Fra: 1695 | Rendering 1 / 16 samples
+00:32.703  render           | Fra: 1695 | Rendering 16 / 16 samples
+00:32.781  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1695.png'
+00:32.781  render           | Time: 00:00.27 (Saving: 00:00.06)
+00:32.781  render           | Rendering frame 1697
+00:32.781  render           | Rendering frame 1697
+00:32.781  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:32.781  render           | Engine: EEVEE
+00:32.844  render           | Fra: 1697 | Rendering 1 / 16 samples
+00:32.953  render           | Fra: 1697 | Rendering 16 / 16 samples
+00:33.031  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1697.png'
+00:33.031  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:33.031  render           | Rendering frame 1699
+00:33.031  render           | Rendering frame 1699
+00:33.031  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:33.031  render           | Engine: EEVEE
+00:33.109  render           | Fra: 1699 | Rendering 1 / 16 samples
+00:33.219  render           | Fra: 1699 | Rendering 16 / 16 samples
+00:33.312  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1699.png'
+00:33.312  render           | Time: 00:00.27 (Saving: 00:00.07)
+00:33.312  render           | Rendering frame 1701
+00:33.312  render           | Rendering frame 1701
+00:33.312  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:33.312  render           | Engine: EEVEE
+00:33.375  render           | Fra: 1701 | Rendering 1 / 16 samples
+00:33.484  render           | Fra: 1701 | Rendering 16 / 16 samples
+00:33.547  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1701.png'
+00:33.547  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:33.547  render           | Rendering frame 1703
+00:33.547  render           | Rendering frame 1703
+00:33.547  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:33.547  render           | Engine: EEVEE
+00:33.625  render           | Fra: 1703 | Rendering 1 / 16 samples
+00:33.734  render           | Fra: 1703 | Rendering 16 / 16 samples
+00:33.797  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1703.png'
+00:33.797  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:33.797  render           | Rendering frame 1705
+00:33.797  render           | Rendering frame 1705
+00:33.797  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:33.797  render           | Engine: EEVEE
+00:33.875  render           | Fra: 1705 | Rendering 1 / 16 samples
+00:33.969  render           | Fra: 1705 | Rendering 16 / 16 samples
+00:34.047  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1705.png'
+00:34.047  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:34.047  render           | Rendering frame 1707
+00:34.047  render           | Rendering frame 1707
+00:34.047  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:34.047  render           | Engine: EEVEE
+00:34.109  render           | Fra: 1707 | Rendering 1 / 16 samples
+00:34.219  render           | Fra: 1707 | Rendering 16 / 16 samples
+00:34.297  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1707.png'
+00:34.297  render           | Time: 00:00.25 (Saving: 00:00.06)
+00:34.297  render           | Rendering frame 1709
+00:34.297  render           | Rendering frame 1709
+00:34.297  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:34.297  render           | Engine: EEVEE
+00:34.359  render           | Fra: 1709 | Rendering 1 / 16 samples
+00:34.531  render           | Fra: 1709 | Rendering 16 / 16 samples
+00:34.594  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1709.png'
+00:34.594  render           | Time: 00:00.30 (Saving: 00:00.06)
+00:34.594  render           | Rendering frame 1711
+00:34.594  render           | Rendering frame 1711
+00:34.594  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:34.594  render           | Engine: EEVEE
+00:34.672  render           | Fra: 1711 | Rendering 1 / 16 samples
+00:34.766  render           | Fra: 1711 | Rendering 16 / 16 samples
+00:34.844  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1711.png'
+00:34.844  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:34.844  render           | Rendering frame 1713
+00:34.844  render           | Rendering frame 1713
+00:34.844  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:34.844  render           | Engine: EEVEE
+00:34.906  render           | Fra: 1713 | Rendering 1 / 16 samples
+00:35.000  render           | Fra: 1713 | Rendering 16 / 16 samples
+00:35.078  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1713.png'
+00:35.078  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:35.078  render           | Rendering frame 1715
+00:35.078  render           | Rendering frame 1715
+00:35.078  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:35.078  render           | Engine: EEVEE
+00:35.141  render           | Fra: 1715 | Rendering 1 / 16 samples
+00:35.234  render           | Fra: 1715 | Rendering 16 / 16 samples
+00:35.312  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1715.png'
+00:35.312  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:35.312  render           | Rendering frame 1717
+00:35.312  render           | Rendering frame 1717
+00:35.312  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:35.312  render           | Engine: EEVEE
+00:35.375  render           | Fra: 1717 | Rendering 1 / 16 samples
+00:35.469  render           | Fra: 1717 | Rendering 16 / 16 samples
+00:35.547  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1717.png'
+00:35.547  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:35.547  render           | Rendering frame 1719
+00:35.547  render           | Rendering frame 1719
+00:35.547  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:35.547  render           | Engine: EEVEE
+00:35.625  render           | Fra: 1719 | Rendering 1 / 16 samples
+00:35.719  render           | Fra: 1719 | Rendering 16 / 16 samples
+00:35.781  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1719.png'
+00:35.781  render           | Time: 00:00.24 (Saving: 00:00.06)
+00:35.781  render           | Rendering frame 1721
+00:35.781  render           | Rendering frame 1721
+00:35.781  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:35.781  render           | Engine: EEVEE
+00:35.844  render           | Fra: 1721 | Rendering 1 / 16 samples
+00:35.969  render           | Fra: 1721 | Rendering 16 / 16 samples
+00:36.031  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1721.png'
+00:36.031  render           | Time: 00:00.25 (Saving: 00:00.06)
+00:36.031  render           | Rendering frame 1723
+00:36.031  render           | Rendering frame 1723
+00:36.031  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:36.031  render           | Engine: EEVEE
+00:36.109  render           | Fra: 1723 | Rendering 1 / 16 samples
+00:36.203  render           | Fra: 1723 | Rendering 16 / 16 samples
+00:36.266  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1723.png'
+00:36.266  render           | Time: 00:00.22 (Saving: 00:00.06)
+00:36.266  render           | Rendering frame 1725
+00:36.266  render           | Rendering frame 1725
+00:36.266  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:36.266  render           | Engine: EEVEE
+00:36.328  render           | Fra: 1725 | Rendering 1 / 16 samples
+00:36.437  render           | Fra: 1725 | Rendering 16 / 16 samples
+00:36.500  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1725.png'
+00:36.500  render           | Time: 00:00.23 (Saving: 00:00.06)
+00:36.500  render           | Rendering frame 1727
+00:36.500  render           | Rendering frame 1727
+00:36.500  render           | Start rendering: SC03_MISE_EN_SCENE, ViewLayer
+00:36.500  render           | Engine: EEVEE
+00:36.578  render           | Fra: 1727 | Rendering 1 / 16 samples
+00:36.672  render           | Fra: 1727 | Rendering 16 / 16 samples
+00:36.750  render           | Saved: 'D:\CLOUD_DEEP3D\Me\3D\Projects\09. AI Short Film\Little Prince\Claude\production\animatic\mise-en-scene\SC03_plans\f_1727.png'
+00:36.750  render           | Time: 00:00.24 (Saving: 00:00.06)
+BlenderMCP addon registered
+BlenderMCP addon unregistered
+
+Blender quit

@@ -13,3 +13,10 @@ Le valet de la Reine (scènes 4–5), qu'on voit de près, a sa propre fiche : 
 
 Règle : les figurants restent en arrière-plan, sans gros plan ; style identique
 aux personnages principaux (rendu 3D stylisé).
+
+## Jardiniers — planches et modèles (2026-11-22, `provisoire`)
+- Jardinier 1 (le plus âgé, trapu, moustache grise, grand chapeau de paille usé, gilet de toile brune) : `kb/characters/sheets/gardener1.png`,
+  modèle `production/characters3d/gardener1_tripo_v1_rig.glb` (1,75 m).
+- Jardinier 2 (jeune, dégingandé, cheveux auburn, petit chapeau rond, foulard rouge, pantalon olive rapiécé) : `kb/characters/sheets/gardener2.png`,
+  modèle `production/characters3d/gardener2_tripo_v1_rig.glb` (1,70 m).
+- Leur brouette : `production/refs/wheelbarrow-sheet.png`, `production/props3d/wheelbarrow_tripo_v1.glb`.

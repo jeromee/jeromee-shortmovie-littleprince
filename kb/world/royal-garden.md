@@ -62,6 +62,22 @@ rapprochée du massif, sauf les « allées de dalles » : les allées sont en gr
 The royal garden of Aurelia in 1830, rich and lush, never bare. At the foot of the palace's grand staircase, a French formal garden: four parterres of clipped boxwood in curving embroidery patterns, filled with roses and lavender, punctuated by yews clipped into cones; pale gravel paths; at the centre of the south-west parterre, a tiered stone fountain. Along the curved low wall with its balustrade, two gravel perimeter paths; the eastern one runs behind a tall yew hedge and passes a Victorian glass-and-iron greenhouse on the eastern edge. Further south, the garden turns into a dense, romantic grove — tall round trees, cypresses, clumps of shrubs and flowers — where the path winds to a stone arch covered in pink and lilac climbing roses, the threshold of a secret clearing: the large round stone-edged bed of pink and peach roses, in a semicircular recess of the wall, with a wooden bench on the west and a lion-head wall fountain on the east.
 ```
 
+## Clairière v2 — décidé (2026-11-22, auteur)
+Voir [../decisions/0012-clairiere-v2-massif-dalles-vegetation.md](../decisions/0012-clairiere-v2-massif-dalles-vegetation.md).
+- Le massif a sa vraie hauteur : rosiers de 0,7 à 0,9 m, bordure de pierre de 0,40 m (on peut s'y asseoir).
+- **Un passage rectiligne de trois dalles carrées ou rectangulaires** entre dans le massif par le sud-sud-est et mène à **un petit rond de mousse** au pied de la Rose :
+  c'est là qu'Elias s'agenouille près d'elle (scènes 3, 8) et qu'il s'endort (scène 12).
+- **Exèdre** : rosiers grimpants roses sur le muret, grands arbustes fleuris (blancs, lilas, verts) juste derrière, grands arbres au-delà.
+
+**FR (à ajouter au bloc canonique quand le massif est proche)**
+> Un étroit passage droit de dalles de pierre rectangulaires entre dans le massif entre les rosiers et mène à un petit rond de mousse au pied de la rose
+> jaune. Derrière l'exèdre, des rosiers grimpants roses couvrent le muret, de grands arbustes fleuris et de grands arbres le dominent.
+
+**EN (à coller)**
+```text
+A narrow straight path of rectangular stone slabs leads between the rose bushes to a small round patch of moss at the foot of the yellow rose. Behind the semicircular recess, pink climbing roses cover the low wall, with tall flowering shrubs and large trees rising above it.
+```
+
 ## Verrou visuel (pour les prompts — d'après l'image de concept)
 
 **FR (référence)**

@@ -1,0 +1,253 @@
+{
+ "T_END": 89.49,
+ "SHIFT1": -18.61,
+ "SHIFT2": -14.71,
+ "CUT": [
+  42.4,
+  45.2
+ ],
+ "W0": 26.19,
+ "W1": 29.1,
+ "SHOTS": [
+  [
+   0.0,
+   4.5,
+   "SH01 — Situation"
+  ],
+  [
+   4.5,
+   10.0,
+   "SH02 — Les jardiniers"
+  ],
+  [
+   10.0,
+   15.79,
+   "SH03 — Elias arrive"
+  ],
+  [
+   15.79,
+   21.29,
+   "SH04 — Il boude"
+  ],
+  [
+   21.29,
+   31.79,
+   "SH05 — La Rose s'éveille"
+  ],
+  [
+   31.79,
+   38.19,
+   "SH06 — Tu es vivante ?"
+  ],
+  [
+   38.19,
+   45.29,
+   "SH07 — Ceux qui savent écouter"
+  ],
+  [
+   45.29,
+   50.29,
+   "SH08 — Je t'attends, Elias"
+  ],
+  [
+   50.29,
+   58.89,
+   "SH09 — Pas moi"
+  ],
+  [
+   58.89,
+   65.34,
+   "SH10 — Les étoiles vont tomber"
+  ],
+  [
+   65.34,
+   68.04,
+   "SH11 — Je sais"
+  ],
+  [
+   68.04,
+   75.99,
+   "SH12 — Pas un spectacle"
+  ],
+  [
+   75.99,
+   79.29,
+   "SH13 — Le ciel"
+  ],
+  [
+   79.29,
+   89.49,
+   "SH14 — J'aurai besoin de toi"
+  ]
+ ],
+ "DIALOGUE": [
+  [
+   0.0,
+   4.5,
+   "",
+   "(au loin, Elias arrive en courant ;\nles jardiniers partent, sans un regard pour les fleurs)"
+  ],
+  [
+   4.5,
+   7.0,
+   "",
+   "(ils le voient venir et s'arrêtent près du banc)"
+  ],
+  [
+   7.0,
+   9.4,
+   "",
+   "(ils soulèvent leur chapeau ;\nElias passe l'arche en courant, sans les voir)"
+  ],
+  [
+   9.4,
+   14.78,
+   "",
+   "(il ralentit en contournant le massif,\ndonne un coup de pied dans le gravier)"
+  ],
+  [
+   14.89,
+   18.89,
+   "",
+   "(il se laisse tomber sur la bordure, dos aux roses ; il boude)"
+  ],
+  [
+   18.99,
+   20.79,
+   "LA ROSE (hors champ)",
+   "Tu boudes, petit prince ?"
+  ],
+  [
+   21.39,
+   23.79,
+   "",
+   "(Elias se retourne d'un bond : personne)"
+  ],
+  [
+   23.79,
+   25.99,
+   "",
+   "(la rose jaune s'éveille : son cœur s'illumine, un visage apparaît ;\nle jardin se tait)"
+  ],
+  [
+   26.19,
+   29.9,
+   "",
+   "(il entre dans le massif par les dalles et s'agenouille devant elle)"
+  ],
+  [
+   31.89,
+   33.59,
+   "ELIAS (chuchotant)",
+   "Tu es… vivante ?"
+  ],
+  [
+   34.39,
+   36.09,
+   "LA ROSE",
+   "Bien sûr que je suis vivante."
+  ],
+  [
+   36.79,
+   37.79,
+   "ELIAS (surpris)",
+   "Tu sais parler ?!"
+  ],
+  [
+   38.39,
+   42.59,
+   "LA ROSE",
+   "Je parle à ceux qui savent écouter.\nIls sont de moins en moins nombreux."
+  ],
+  [
+   43.49,
+   44.89,
+   "ELIAS",
+   "Les grands ne t'entendent pas ?"
+  ],
+  [
+   45.49,
+   49.89,
+   "LA ROSE",
+   "Les grands n'entendent plus rien.\nIl y a longtemps que je t'attends, Elias."
+  ],
+  [
+   50.49,
+   51.59,
+   "ELIAS",
+   "Tu connais mon nom ?"
+  ],
+  [
+   52.19,
+   56.89,
+   "LA ROSE",
+   "Je connais celui de tous les enfants de ce palais.\nIls finissent tous par m'oublier."
+  ],
+  [
+   57.79,
+   58.49,
+   "ELIAS",
+   "Pas moi."
+  ],
+  [
+   58.99,
+   61.49,
+   "LA ROSE (amusée)",
+   "C'est ce qu'ils disent tous."
+  ],
+  [
+   61.49,
+   62.89,
+   "",
+   "(la lueur de son cœur faiblit ; sa voix change)"
+  ],
+  [
+   62.89,
+   65.29,
+   "LA ROSE",
+   "Ce soir, les étoiles vont tomber."
+  ],
+  [
+   65.39,
+   67.79,
+   "ELIAS",
+   "Je sais. Ils vont regarder le spectacle."
+  ],
+  [
+   68.19,
+   76.19,
+   "LA ROSE",
+   "Ce n'est pas un spectacle. Une seule étoile qui touche le sol,\net tout brûle. Le jardin, le palais… Ta planète entière."
+  ],
+  [
+   76.19,
+   79.29,
+   "",
+   "(Elias lève les yeux : au-dessus des cyprès,\ndes étoiles pâles en plein jour)"
+  ],
+  [
+   79.49,
+   80.79,
+   "ELIAS",
+   "Il faut prévenir Maman."
+  ],
+  [
+   81.49,
+   82.79,
+   "LA ROSE",
+   "Elle ne t'entendra pas."
+  ],
+  [
+   82.79,
+   84.39,
+   "",
+   "(un temps)"
+  ],
+  [
+   84.69,
+   87.29,
+   "LA ROSE",
+   "Cette nuit… j'aurai besoin de toi."
+  ]
+ ]
+}
