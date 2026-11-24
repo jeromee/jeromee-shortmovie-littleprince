@@ -1,0 +1,10 @@
+# Sauvegardes et copies Blender : restent sur le disque, hors Git
+*.blend1
+production/blender/_tmp_*
+production/blender/world_avant-*
+production/blender/world_memoire-*
+
+# Anciennes versions de l'animatique
+production/animatic/_avant-*/
+production/animatic/_ancien-*/
+production/animatic/_to_delete/
